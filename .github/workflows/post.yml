@@ -1,15 +1,7 @@
 name: Post to social
 
 on:
-  schedule:
-    # Times are UTC. GitHub often starts scheduled runs hours late, and may skip some.
-    # Main runs post the shared queue: X and Bluesky, plus LinkedIn at 14:17.
-    - cron: "17 8 * * *"
-    - cron: "17 14 * * *"
-    - cron: "17 19 * * *"
-    # Extra runs post only X-only posts (platforms = ["x"]), 12 a day.
-    - cron: "17 0,7,11,15,16,17,18,20,21 * * *"
-    - cron: "47 9,12,22 * * *"
+  # Runs are started by cron-job.org at exact times (see README), not GitHub's scheduler.
   workflow_dispatch:
     inputs:
       dry_run:
@@ -46,9 +38,8 @@ jobs:
       - name: Post
         run: python poster.py run --platforms "$PLATFORMS" --lane "$LANE" ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
-          # cron-job.org starts runs through workflow_dispatch and passes lane and platforms.
-          LANE: ${{ github.event_name == 'workflow_dispatch' && inputs.lane || (github.event_name == 'schedule' && !contains(fromJSON('["17 8 * * *", "17 14 * * *", "17 19 * * *"]'), github.event.schedule)) && 'extra' || 'main' }}
-          PLATFORMS: ${{ github.event_name == 'workflow_dispatch' && inputs.platforms || (github.event_name != 'schedule' || github.event.schedule == '17 14 * * *') && 'x,bluesky,linkedin' || contains(fromJSON('["17 8 * * *", "17 19 * * *"]'), github.event.schedule) && 'x,bluesky' || 'x' }}
+          LANE: ${{ inputs.lane || 'main' }}
+          PLATFORMS: ${{ inputs.platforms || 'x,bluesky,linkedin' }}
           X_MIN_GAP_MINUTES: "30"
           POSTER_TIMEZONE: Asia/Famagusta
           X_API_KEY: ${{ secrets.X_API_KEY }}

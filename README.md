@@ -7,7 +7,7 @@ Posts from `queue.toml` to X, Bluesky and LinkedIn on a schedule. It runs free o
 - You (or Claude) write posts into `queue.toml`.
 - **Main runs** (08:17, 14:17 and 19:17 UTC) post the shared queue to X and Bluesky, plus LinkedIn at 14:17. Posts marked `platforms = ["x", "bluesky"]` skip LinkedIn, so keep about two of those for every post that goes everywhere.
 - **Extra runs** (12 a day) post only X-only posts, marked `platforms = ["x"]`, at least 30 minutes after the previous X post. That makes up to 15 X posts a day while Bluesky stays at 3, in step with X on the shared posts.
-- GitHub often starts scheduled runs hours late and can skip some, so treat the times as approximate.
+- cron-job.org starts each run at the exact time by calling GitHub's API (four jobs: main 08:17 and 19:17, main + LinkedIn 14:17, and X extra at :17 and :47). GitHub's own scheduler is off, so the two never both post.
 - What has been posted is recorded in `state/posted.json` and committed back to the repo, so nothing posts twice.
 - A platform with no credentials is skipped, so you can start with one and add the others later.
 - If a post fails, the run is marked failed and GitHub emails you. The next run retries it.
