@@ -1,0 +1,78 @@
+name: Post to social
+
+on:
+  schedule:
+    # Times are UTC. GitHub often starts scheduled runs hours late, and may skip some.
+    # Main runs post the shared queue: X and Bluesky, plus LinkedIn at 14:17.
+    - cron: "17 8 * * *"
+    - cron: "17 14 * * *"
+    - cron: "17 19 * * *"
+    # Extra runs post only X-only posts (platforms = ["x"]), 12 a day.
+    - cron: "17 0,7,11,15,16,17,18,20,21 * * *"
+    - cron: "47 9,12,22 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (show what would be posted, post nothing)"
+        type: boolean
+        default: true
+      lane:
+        description: "main = shared posts; extra = X-only posts"
+        type: choice
+        options: [main, extra]
+        default: main
+      platforms:
+        description: "Comma-separated platforms"
+        type: string
+        default: "x,bluesky,linkedin"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-poster
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Post
+        run: python poster.py run --platforms "$PLATFORMS" --lane "$LANE" ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          # cron-job.org starts runs through workflow_dispatch and passes lane and platforms.
+          LANE: ${{ github.event_name == 'workflow_dispatch' && inputs.lane || (github.event_name == 'schedule' && !contains(fromJSON('["17 8 * * *", "17 14 * * *", "17 19 * * *"]'), github.event.schedule)) && 'extra' || 'main' }}
+          PLATFORMS: ${{ github.event_name == 'workflow_dispatch' && inputs.platforms || (github.event_name != 'schedule' || github.event.schedule == '17 14 * * *') && 'x,bluesky,linkedin' || contains(fromJSON('["17 8 * * *", "17 19 * * *"]'), github.event.schedule) && 'x,bluesky' || 'x' }}
+          X_MIN_GAP_MINUTES: "30"
+          POSTER_TIMEZONE: Asia/Famagusta
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+          LINKEDIN_TOKEN_EXPIRES: ${{ secrets.LINKEDIN_TOKEN_EXPIRES }}
+
+      # Commit the record of what was posted, even if one platform failed,
+      # so the next run doesn't post the same thing again.
+      - name: Save posting record
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/posted.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Record posts from run ${{ github.run_id }}"
+          for attempt in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1

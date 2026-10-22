@@ -1,0 +1,324 @@
+{
+  "intro-indie-builder": {
+    "x": {
+      "id": "2110397918427398296",
+      "url": "https://x.com/i/web/status/2110397918427398296",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-14T15:50:47Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxtxybygeh2n",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxtxybygeh2n",
+      "posted_at": "2026-10-14T16:33:08Z"
+    }
+  },
+  "c2e-637-characters": {
+    "x": {
+      "id": "2110495148727500931",
+      "url": "https://x.com/i/web/status/2110495148727500931",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-14T22:17:09Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxul7gygdt2l",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxul7gygdt2l",
+      "posted_at": "2026-10-14T22:17:09Z"
+    }
+  },
+  "c2e-637-characters-v2": {
+    "x": {
+      "id": "2110725184835526698",
+      "url": "https://x.com/i/web/status/2110725184835526698",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-15T13:31:14Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxw6bxhdtp2h",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxw6bxhdtp2h",
+      "posted_at": "2026-10-15T13:31:15Z"
+    }
+  },
+  "ereader-pdf-vs-epub": {
+    "x": {
+      "id": "2110798115758288957",
+      "url": "https://x.com/i/web/status/2110798115758288957",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-15T18:21:02Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxwoi7fn552n",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxwoi7fn552n",
+      "posted_at": "2026-10-15T18:21:05Z"
+    }
+  },
+  "q-what-building-1": {
+    "x": {
+      "id": "2110856877026283772",
+      "url": "https://x.com/i/web/status/2110856877026283772",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-15T22:14:32Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxx3joyh3t2n",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxx3joyh3t2n",
+      "posted_at": "2026-10-15T22:14:33Z"
+    }
+  },
+  "q-stack": {
+    "x": {
+      "id": "2111084596628537626",
+      "url": "https://x.com/i/web/status/2111084596628537626",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-16T13:19:24Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxyo3puf2i2z",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxyo3puf2i2z",
+      "posted_at": "2026-10-16T13:19:25Z"
+    }
+  },
+  "tip-ffmpeg-percent-d": {
+    "x": {
+      "id": "2111157101493981336",
+      "url": "https://x.com/i/web/status/2111157101493981336",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-16T18:07:31Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxz66vf3ch24",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxz66vf3ch24",
+      "posted_at": "2026-10-16T18:07:31Z"
+    }
+  },
+  "q-solo-hardest": {
+    "x": {
+      "id": "2111216795738685528",
+      "url": "https://x.com/i/web/status/2111216795738685528",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-16T22:04:43Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mxzlh2hrp327",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mxzlh2hrp327",
+      "posted_at": "2026-10-16T22:04:43Z"
+    }
+  },
+  "q-not-built": {
+    "x": {
+      "id": "2111430732044230833",
+      "url": "https://x.com/i/web/status/2111430732044230833",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-17T12:14:49Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my32x6enim24",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my32x6enim24",
+      "posted_at": "2026-10-17T12:14:50Z"
+    }
+  },
+  "launchorbit-how-it-works": {
+    "x": {
+      "id": "2111506584765387066",
+      "url": "https://x.com/i/web/status/2111506584765387066",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-17T17:16:14Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my3lsjfkvf2n",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my3lsjfkvf2n",
+      "posted_at": "2026-10-17T17:16:28Z"
+    }
+  },
+  "q-ship-today": {
+    "x": {
+      "id": "2111569525657526345",
+      "url": "https://x.com/i/web/status/2111569525657526345",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-17T21:26:20Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my3zref37r2l",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my3zref37r2l",
+      "posted_at": "2026-10-17T21:26:21Z"
+    }
+  },
+  "q-naming": {
+    "x": {
+      "id": "2111799270307184716",
+      "url": "https://x.com/i/web/status/2111799270307184716",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-18T12:39:16Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my5mrrw6572l",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my5mrrw6572l",
+      "posted_at": "2026-10-18T12:39:16Z"
+    }
+  },
+  "tip-css-important": {
+    "x": {
+      "id": "2111871221176623405",
+      "url": "https://x.com/i/web/status/2111871221176623405",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-18T17:25:10Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my64qzvimk2l",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my64qzvimk2l",
+      "posted_at": "2026-10-18T17:25:11Z"
+    }
+  },
+  "x-show-01": {
+    "x": {
+      "id": "2111921517457973657",
+      "url": "https://x.com/i/web/status/2111921517457973657",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-18T20:45:02Z"
+    }
+  },
+  "q-landing-feedback": {
+    "x": {
+      "id": "2111932909297045654",
+      "url": "https://x.com/i/web/status/2111932909297045654",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-18T21:30:18Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3my6khdvgyh2x",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3my6khdvgyh2x",
+      "posted_at": "2026-10-18T21:30:18Z"
+    }
+  },
+  "x-show-02": {
+    "x": {
+      "id": "2111958925285425603",
+      "url": "https://x.com/i/web/status/2111958925285425603",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-18T23:13:40Z"
+    }
+  },
+  "x-connect-01": {
+    "x": {
+      "id": "2111977976560484436",
+      "url": "https://x.com/i/web/status/2111977976560484436",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T00:29:23Z"
+    }
+  },
+  "x-show-03": {
+    "x": {
+      "id": "2112041497461698769",
+      "url": "https://x.com/i/web/status/2112041497461698769",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T04:41:47Z"
+    }
+  },
+  "x-show-04": {
+    "x": {
+      "id": "2112192451305783298",
+      "url": "https://x.com/i/web/status/2112192451305783298",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T14:41:37Z"
+    }
+  },
+  "q-launch-directories": {
+    "x": {
+      "id": "2112207712356553119",
+      "url": "https://x.com/i/web/status/2112207712356553119",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T15:42:16Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myahhx4eq72z",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myahhx4eq72z",
+      "posted_at": "2026-10-19T15:42:17Z"
+    }
+  },
+  "x-connect-02": {
+    "x": {
+      "id": "2112221780064780534",
+      "url": "https://x.com/i/web/status/2112221780064780534",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T16:38:10Z"
+    }
+  },
+  "c2e-scanned-pdf-text": {
+    "x": {
+      "id": "2112272401610227982",
+      "url": "https://x.com/i/web/status/2112272401610227982",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T19:59:19Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myavtlhhtm2z",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myavtlhhtm2z",
+      "posted_at": "2026-10-19T19:59:19Z"
+    }
+  },
+  "x-show-05": {
+    "x": {
+      "id": "2112281635362087278",
+      "url": "https://x.com/i/web/status/2112281635362087278",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T20:36:01Z"
+    }
+  },
+  "q-feedback-channel": {
+    "x": {
+      "id": "2112316309564166566",
+      "url": "https://x.com/i/web/status/2112316309564166566",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-19T22:53:47Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myb7lkur5e2x",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myb7lkur5e2x",
+      "posted_at": "2026-10-19T22:53:48Z"
+    }
+  },
+  "x-show-06": {
+    "x": {
+      "id": "2112338283925569912",
+      "url": "https://x.com/i/web/status/2112338283925569912",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-20T00:21:07Z"
+    }
+  },
+  "x-connect-03": {
+    "x": {
+      "id": "2112352201352081715",
+      "url": "https://x.com/i/web/status/2112352201352081715",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-20T01:16:25Z"
+    }
+  },
+  "x-show-07": {
+    "x": {
+      "id": "2112525298809856507",
+      "url": "https://x.com/i/web/status/2112525298809856507",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-20T12:44:14Z"
+    }
+  },
+  "q-best-hours": {
+    "x": {
+      "id": "2112538986422079740",
+      "url": "https://x.com/i/web/status/2112538986422079740",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-20T13:38:38Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mycqzrvv6x2r",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mycqzrvv6x2r",
+      "posted_at": "2026-10-20T13:38:38Z"
+    }
+  },
+  "x-show-08": {
+    "x": {
+      "id": "2112551747092676630",
+      "url": "https://x.com/i/web/status/2112551747092676630",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-20T14:29:20Z"
+    }
+  }
+}

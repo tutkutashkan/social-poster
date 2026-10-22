@@ -1,0 +1,950 @@
+# Posting queue. Each run posts the next due post to each platform, one per platform per run,
+# in the order they appear in this file. Check your edits with: python3 poster.py check
+#
+#   id              required and unique. Never reuse or rename an id that has been posted.
+#   date            optional, earliest day to post (YYYY-MM-DD). Without it, the post is due right away.
+#   text            the post, used on every platform unless overridden below.
+#   x / bluesky / linkedin
+#                   optional text for one platform. Limits: X 280, Bluesky 300, LinkedIn 3000 characters.
+#   link            optional URL, shown as a link card on Bluesky and LinkedIn.
+#                   On X it's added only when x_include_link = true, because an X post
+#                   with a link costs $0.20 instead of $0.015.
+#   platforms       optional, e.g. ["bluesky", "linkedin"]. Default: all three.
+#   draft = true    skip this post until you delete the line.
+
+
+# ---------------------------------------------------------------------------
+# X and Bluesky post 3 times a day, LinkedIn once (see .github/workflows/post.yml).
+# Pattern: one story post (everywhere), then two conversation starters
+# (X and Bluesky only). Keep that ratio so LinkedIn doesn't fall behind.
+# Posts are general tips and context, plus posts about TrySEO (tryseo.org), the only product to promote.
+# Never write about the products failing or having bugs.
+# Delete `draft = true` on the ones you approve.
+# ---------------------------------------------------------------------------
+
+
+# Intro. Already posted on X; goes to Bluesky and LinkedIn on their first run.
+[[post]]
+id = "intro-indie-builder"
+text = """
+I build small products solo and ship them in public.
+
+Live: Convert2EPUB, LaunchOrbit, WebsiteAuth. Next: a desktop file converter.
+
+I'll post what breaks, what I cut and the real numbers. #buildinpublic
+"""
+linkedin = """
+I build products on my own, and right now my focus is TrySEO.
+
+TrySEO is SEO done for you: every month it writes articles in your brand voice, publishes them straight to your site, builds backlinks, and tracks how your brand shows up in AI assistants like ChatGPT, Claude and Gemini.
+
+Here I'll be sharing practical lessons on SEO, AI search, and building and growing small products. Follow along if that's your kind of thing. #seo #buildinpublic
+"""
+
+# Convert2EPUB: what it's for
+[[post]]
+id = "ereader-pdf-vs-epub"
+draft = true  # LinkedIn: other products, not posting
+text = """
+PDFs are built for paper. Every page has a fixed size, so on an e-reader you end up zooming and scrolling sideways.
+
+EPUB works differently: the text reflows to fit your screen, and you pick the font size.
+
+That's why I built Convert2EPUB. Do you read PDFs on your e-reader?
+"""
+linkedin = """
+If you've ever opened a PDF on a Kindle or Kobo, you know the problem.
+
+PDFs are built for paper. Every page has a fixed size, so on a small screen you zoom in, scroll sideways, zoom out, and repeat on every page.
+
+EPUB works differently. The text reflows to fit whatever screen you're on, and you choose the font size.
+
+That's the idea behind Convert2EPUB: it turns PDFs, including scanned books, into EPUBs with real chapters and a working table of contents.
+
+What do you mostly read on your e-reader? #ebooks #reading
+"""
+link = "https://convert2epub.com"
+
+# Rewrite of c2e-637-characters, which was deleted from X and Bluesky on 2026-10-15.
+# LinkedIn still gets the original id's (rewritten) LinkedIn version.
+[[post]]
+id = "q-what-building-1"
+platforms = ["x", "bluesky"]
+text = """
+What are you building right now?
+
+One line and a link. I'll check out every one.
+"""
+
+# Stacks from LaunchOrbit, WebsiteAuth and Convert2EPUB
+[[post]]
+id = "q-stack"
+platforms = ["x", "bluesky"]
+text = """
+My default stack for the last few products: Next.js, Supabase, Stripe, Vercel. Railway for anything that needs Docker.
+
+What's yours, and what would you never use again?
+"""
+
+# Dev tip
+[[post]]
+id = "tip-ffmpeg-percent-d"
+text = """
+FFmpeg tip: it treats %d in a file name as a placeholder for a frame number.
+
+So a file called 100%done.png can trip it up. If your app runs FFmpeg on files your users named, pass it plain, simple file names.
+
+What's a tool quirk you wish you'd known sooner?
+"""
+
+[[post]]
+id = "q-solo-hardest"
+platforms = ["x", "bluesky"]
+text = """
+Hardest part of building solo: building, marketing or support?
+
+For me it's marketing. That's why I'm finally posting here.
+"""
+
+# LaunchOrbit marketplace: added 7f5712a (Sep 8), removed 73d47a3 (Sep 11)
+[[post]]
+id = "q-not-built"
+platforms = ["x", "bluesky"]
+text = """
+What's a feature you decided not to build, and why?
+"""
+
+# LaunchOrbit: how it works
+[[post]]
+id = "launchorbit-how-it-works"
+draft = true  # LinkedIn: other products, not posting
+text = """
+On LaunchOrbit, every new product is a tile on one big map, and the #1 product sits in the middle.
+
+Only upvotes decide who gets there. Paying can make your tile bigger, but it never buys a better spot.
+
+Launching something soon? Listing is free.
+"""
+linkedin = """
+On a lot of launch boards, money decides who gets seen first.
+
+On LaunchOrbit, every new product is a tile on one shared map, and the #1 product sits in the middle. Only community upvotes decide who gets there. Paid plans give you a bigger tile, never a better position.
+
+Listing is free. Paste your URL and your logo is pulled in automatically.
+
+If you're launching something soon, I'd love to see it in orbit. #buildinpublic #startups
+"""
+link = "https://launchorbit.co"
+
+[[post]]
+id = "q-ship-today"
+platforms = ["x", "bluesky"]
+text = """
+What did you ship today?
+
+Doesn't matter how small. A fixed typo counts.
+"""
+
+# WebsiteAuth rename, Sep 11 to 19 (d6efafe)
+[[post]]
+id = "q-naming"
+platforms = ["x", "bluesky"]
+text = """
+How do you name a new product?
+
+Domain first, or name first?
+"""
+
+# Dev tip
+[[post]]
+id = "tip-css-important"
+text = """
+CSS tip: !important feels like a quick fix, but each one makes the next one more likely.
+
+You add one to win against a rule, then need another to win against that one.
+
+If you're stacking them, it's time to clean up the rules instead. How many are in your codebase?
+"""
+
+[[post]]
+id = "q-landing-feedback"
+platforms = ["x", "bluesky"]
+text = """
+Drop your landing page below.
+
+I'll reply with one honest note on the headline.
+"""
+
+# 26 'Featured on' badges on LaunchOrbit
+[[post]]
+id = "q-launch-directories"
+platforms = ["x", "bluesky"]
+text = """
+Which launch directory actually sent you users, not just a backlink?
+
+Asking for real. I've listed my products on more than 20.
+"""
+
+# Convert2EPUB: scanned books
+[[post]]
+id = "c2e-scanned-pdf-text"
+draft = true  # LinkedIn: other products, not posting
+text = """
+Scanned PDFs are photos of pages. Many also hide the text in an invisible layer behind each photo. That's what makes them searchable.
+
+A good converter reads that hidden layer, so you get resizable text. Convert2EPUB does it automatically.
+
+Got scanned books sitting unread?
+"""
+
+# Convert2EPUB fixes from Reddit feedback: ad7726f, 01909ce
+[[post]]
+id = "q-feedback-channel"
+platforms = ["x", "bluesky"]
+text = """
+Where do you get your most useful product feedback?
+
+Reddit, X, email, or talking to users one on one?
+"""
+
+[[post]]
+id = "q-best-hours"
+platforms = ["x", "bluesky"]
+text = """
+Do you do your best building late at night or first thing in the morning?
+"""
+
+# Dev tip
+[[post]]
+id = "tip-stripe-webhook-order"
+text = """
+Stripe tip: webhook events don't always arrive in order.
+
+An old "subscription updated" event can show up after a "cancelled" one. Save each event's timestamp and ignore anything older than what you already have.
+
+What's your favorite Stripe gotcha?
+"""
+
+[[post]]
+id = "q-onetime-vs-sub"
+platforms = ["x", "bluesky"]
+text = """
+Pricing your product: one-time or subscription?
+
+Curious what's working for you, and why.
+"""
+
+[[post]]
+id = "q-weekend"
+platforms = ["x", "bluesky"]
+text = """
+Side-project builders: what are you working on this week?
+
+Screenshots welcome.
+"""
+
+# TrySEO
+[[post]]
+id = "tryseo-what-it-is"
+text = """
+Most businesses know they should publish content for SEO. Few have time to do it every week.
+
+TrySEO does it for you: 30 articles a month in your brand voice, published straight to your site. Growth and Scale plans add backlinks.
+
+What's stopping you from doing SEO right now?
+"""
+linkedin = """
+Most businesses know they should be publishing content for SEO. Very few have the time to do it every single week.
+
+That's the gap TrySEO fills. Every month it researches keywords, plans a content calendar, writes 30 articles in your brand voice and publishes them straight to your site. On the Growth and Scale plans it also builds backlinks to them.
+
+It's written for Google and for AI assistants like ChatGPT, Claude and Gemini, because that's where more and more buyers start their search.
+
+What's the biggest thing stopping you from doing SEO consistently? #seo #contentmarketing
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "q-tool-worth-it"
+platforms = ["x", "bluesky"]
+text = """
+What's one tool you pay for that's worth every cent?
+"""
+
+[[post]]
+id = "q-portfolio"
+platforms = ["x", "bluesky"]
+text = """
+Solo devs: how many products do you run at once?
+
+I've got 3 live and 2 more on the way. Too many, or the only way to find what works?
+"""
+
+# TrySEO
+[[post]]
+id = "tryseo-ai-search"
+text = """
+People don't just Google anymore. They ask ChatGPT, Claude and Gemini what to buy.
+
+TrySEO writes articles meant to rank on Google and get quoted by AI assistants, and tracks how your brand shows up in their answers.
+
+Have you checked what AI says about you?
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "q-build-in-public"
+platforms = ["x", "bluesky"]
+text = """
+Build in public or build in private?
+
+I'm trying public. Ask me anything about what I'm building.
+"""
+
+[[post]]
+id = "q-postgres-sqlite"
+platforms = ["x", "bluesky"]
+text = """
+Side project database: Postgres or SQLite?
+
+Go.
+"""
+
+[[post]]
+id = "shared-host-dr-trap"
+text = """
+SEO tools rate a site's authority with a number called Domain Rating.
+
+If your product lives on a Vercel, Netlify or GitHub Pages subdomain, that number belongs to the platform, not to you. Your own domain is where authority builds.
+
+Which SEO number do you trust least?
+"""
+
+[[post]]
+id = "q-first-users"
+platforms = ["x", "bluesky"]
+text = """
+Where did your first 10 users come from?
+
+Be specific. "Twitter" doesn't count.
+"""
+
+[[post]]
+id = "q-stop-polishing"
+platforms = ["x", "bluesky"]
+text = """
+How do you decide something is ready to ship?
+
+I need a better rule than "when I'm tired of looking at it."
+"""
+
+# Dev tip
+[[post]]
+id = "tip-validate-output"
+text = """
+If your app creates a standard file format, run the official validator on its output. For EPUB it's epubcheck.
+
+Readers and viewers are forgiving, so a file can look fine and still break the spec, then fail somewhere stricter.
+
+What validators do you run?
+"""
+
+[[post]]
+id = "q-ereader-ama"
+platforms = ["x", "bluesky"]
+text = """
+Ask me anything about SEO for small businesses, or about showing up in AI search.
+"""
+
+[[post]]
+id = "q-one-metric"
+platforms = ["x", "bluesky"]
+text = """
+What's the one number you check first thing every morning?
+"""
+
+# Dev tip
+[[post]]
+id = "tip-hard-links"
+text = """
+Dev tip: a hard link gives a file a second name without copying it.
+
+But most USB sticks, SD cards and many network drives don't support them. If your app saves files this way, fall back to a normal copy when a hard link fails.
+
+What file system quirk surprised you most?
+"""
+
+# Convert2EPUB image: 1.28 GB after the diet, about 230 MB added back
+[[post]]
+id = "q-docker-size"
+platforms = ["x", "bluesky"]
+text = """
+How big is your main Docker image?
+
+Mine's about 1.5 GB, because PDFs need a lot of tools. Beat it.
+"""
+
+[[post]]
+id = "q-offline-first"
+platforms = ["x", "bluesky"]
+text = """
+Unpopular opinion: offline desktop apps are underrated for indie devs.
+
+No servers to pay for, no uptime to watch, and users keep their files.
+
+Change my mind.
+"""
+
+# Dev tip
+[[post]]
+id = "tip-supabase-redirects"
+text = """
+Supabase tip: a local config.toml points login redirects to 127.0.0.1 by default.
+
+If it's ever pushed to your live project, magic links send users to localhost. After pushing config, check Authentication > URL Configuration.
+
+What's on your deploy checklist?
+"""
+
+[[post]]
+id = "q-outsource"
+platforms = ["x", "bluesky"]
+text = """
+One-person company: what's the first thing you'd hand off if you could?
+"""
+
+[[post]]
+id = "q-launch-soon"
+platforms = ["x", "bluesky"]
+text = """
+Launching something this month?
+
+Reply with it. I'd love to see what you're working on.
+"""
+
+# Dev tip
+[[post]]
+id = "tip-docker-image-size"
+text = """
+Docker tip: check what your dependencies pull in. Some ship a full browser engine and graphics libraries a server never uses.
+
+Removing them can save hundreds of MB. Just note what you removed, in case you need it later.
+
+What's the biggest surprise you've found in yours?
+"""
+
+[[post]]
+id = "q-what-building-2"
+platforms = ["x", "bluesky"]
+text = """
+Asking again, because I like finding new projects: what are you building?
+
+Tell me what it does in one sentence.
+"""
+
+# LaunchOrbit pivot, 1406059 (Aug 24)
+[[post]]
+id = "q-unbuilt-idea"
+platforms = ["x", "bluesky"]
+text = """
+What's a side project idea you still haven't built?
+
+Share it. Someone might build it with you.
+"""
+
+# Convert2EPUB: maths textbooks
+# TrySEO
+[[post]]
+id = "tryseo-setup"
+text = """
+SEO shouldn't need a full-time hire.
+
+With TrySEO you set it up once, in about five minutes. It researches keywords, plans a month of content, and publishes to WordPress, Shopify, Webflow and more.
+
+What's your site built on?
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "q-skip-advice"
+platforms = ["x", "bluesky"]
+text = """
+If you were starting your first product today, what would you skip?
+"""
+
+[[post]]
+id = "q-hosting-bill"
+platforms = ["x", "bluesky"]
+text = """
+What's your monthly hosting bill across all your projects?
+
+Honest numbers only.
+"""
+
+# TrySEO
+[[post]]
+id = "tryseo-no-promises"
+text = """
+Honest SEO can't promise rankings.
+
+What it can do is compound: useful articles and good links, every month, for months. TrySEO is built to keep that going without you having to think about it.
+
+How long did SEO take to pay off for you?
+"""
+link = "https://tryseo.org"
+
+# TrySEO
+[[post]]
+id = "tryseo-trial"
+text = """
+Thinking about starting SEO for your business?
+
+Every TrySEO plan starts with a 3-day free trial, and articles that get published stay on your site even if you cancel.
+
+What would you want written about first?
+"""
+link = "https://tryseo.org"
+
+# TrySEO
+[[post]]
+id = "tryseo-ai-builders"
+text = """
+Built your site with Lovable, Bolt or v0?
+
+TrySEO can publish SEO articles to it too, alongside WordPress, Shopify, Webflow and more.
+
+What did you build your last site with?
+"""
+link = "https://tryseo.org"
+
+# ---------------------------------------------------------------------------
+# X-only posts for the 12 extra runs a day: people showing what they build,
+# and connecting with other builders. Never ask for follows, likes or reposts;
+# X pushes those down and can suspend accounts that keep asking.
+# ---------------------------------------------------------------------------
+
+[[post]]
+id = "x-show-01"
+platforms = ["x"]
+text = """
+What are you building right now? Tell me who it's for.
+"""
+
+[[post]]
+id = "x-show-02"
+platforms = ["x"]
+text = """
+Describe your product in five words.
+
+I'll go first: PDFs that read like books.
+"""
+
+[[post]]
+id = "x-connect-01"
+platforms = ["x"]
+text = """
+I'm an indie builder making tools for readers and makers.
+
+Who else is building solo? Say hi.
+"""
+
+[[post]]
+id = "x-show-03"
+platforms = ["x"]
+text = """
+What problem does your product solve? One sentence.
+"""
+
+[[post]]
+id = "x-show-04"
+platforms = ["x"]
+text = """
+Show me something you shipped this week. A screenshot, a link or a sentence. Anything counts.
+"""
+
+[[post]]
+id = "x-connect-02"
+platforms = ["x"]
+text = """
+Looking to connect with people building in public. Introduce yourself in one line.
+"""
+
+[[post]]
+id = "x-show-05"
+platforms = ["x"]
+text = """
+Solo founders: what's your product, and how long have you been building it?
+"""
+
+[[post]]
+id = "x-show-06"
+platforms = ["x"]
+text = """
+What's the best feature in your product that nobody notices?
+"""
+
+[[post]]
+id = "x-connect-03"
+platforms = ["x"]
+text = """
+Introduce yourself: your name, what you build, and one thing you're learning right now.
+"""
+
+[[post]]
+id = "x-show-07"
+platforms = ["x"]
+text = """
+Pitch your product in one tweet. Make me want to click.
+"""
+
+[[post]]
+id = "x-show-08"
+platforms = ["x"]
+text = """
+Who's building something for readers, writers or students? I want to see it.
+"""
+
+[[post]]
+id = "x-connect-04"
+platforms = ["x"]
+text = """
+Who's an indie builder more people should know about? Tag them.
+"""
+
+[[post]]
+id = "x-show-09"
+platforms = ["x"]
+text = """
+Building a Chrome extension? What does it do?
+"""
+
+[[post]]
+id = "x-show-10"
+platforms = ["x"]
+text = """
+Mobile app builders: what's your app, and what made you start it?
+"""
+
+[[post]]
+id = "x-connect-05"
+platforms = ["x"]
+text = """
+What are you looking for help with this week? Someone here might know the answer.
+"""
+
+[[post]]
+id = "x-show-11"
+platforms = ["x"]
+text = """
+Who's building developer tools? What does yours make easier?
+"""
+
+[[post]]
+id = "x-show-12"
+platforms = ["x"]
+text = """
+What's the headline on your landing page? Share it below.
+"""
+
+[[post]]
+id = "x-connect-06"
+platforms = ["x"]
+text = """
+Founders who are also designers, developers or writers: what's your main skill, and what are you building with it?
+"""
+
+[[post]]
+id = "x-show-13"
+platforms = ["x"]
+text = """
+Building with AI? Tell me what your product actually does for people.
+"""
+
+[[post]]
+id = "x-show-14"
+platforms = ["x"]
+text = """
+What did you launch this month? I'm looking for new things to try.
+"""
+
+[[post]]
+id = "x-connect-07"
+platforms = ["x"]
+text = """
+Where are you building from? Let's see how global this community is.
+"""
+
+[[post]]
+id = "x-show-15"
+platforms = ["x"]
+text = """
+Pre-launch founders: what are you building, and when does it go live?
+"""
+
+[[post]]
+id = "x-show-16"
+platforms = ["x"]
+text = """
+What's a product you built that you're quietly proud of?
+"""
+
+[[post]]
+id = "x-connect-08"
+platforms = ["x"]
+text = """
+Who did you meet on here that changed how you build?
+"""
+
+[[post]]
+id = "x-show-17"
+platforms = ["x"]
+text = """
+Share the one-line description of your product.
+
+Would someone who's never seen it understand it?
+"""
+
+[[post]]
+id = "x-show-18"
+platforms = ["x"]
+text = """
+Who's building a SaaS that already has paying customers? What does it do?
+"""
+
+[[post]]
+id = "x-connect-09"
+platforms = ["x"]
+text = """
+What's one thing you could help other builders with? Offer it below.
+"""
+
+[[post]]
+id = "x-show-19"
+platforms = ["x"]
+text = """
+What's your side project, and what got you started on it?
+"""
+
+[[post]]
+id = "x-show-20"
+platforms = ["x"]
+text = """
+What product makes your workday easier? Yours or someone else's.
+"""
+
+[[post]]
+id = "x-connect-10"
+platforms = ["x"]
+text = """
+New to building in public? Say hi. Everyone starts somewhere.
+"""
+
+[[post]]
+id = "x-show-21"
+platforms = ["x"]
+text = """
+If your product could only keep one feature, which one would it be?
+"""
+
+[[post]]
+id = "x-show-22"
+platforms = ["x"]
+text = """
+Who's building tools for small businesses? What does yours help with?
+"""
+
+[[post]]
+id = "x-connect-11"
+platforms = ["x"]
+text = """
+Which communities do you spend time in as a builder? I'm looking for good ones.
+"""
+
+[[post]]
+id = "x-show-23"
+platforms = ["x"]
+text = """
+Tell me about your product the way you'd tell a friend, not an investor.
+"""
+
+[[post]]
+id = "x-show-24"
+platforms = ["x"]
+text = """
+Weekend side project or full-time product? Tell me what you're working on.
+"""
+
+[[post]]
+id = "x-connect-12"
+platforms = ["x"]
+text = """
+Who do you follow for honest, practical advice on building products?
+"""
+
+[[post]]
+id = "x-show-25"
+platforms = ["x"]
+text = """
+Who's building productivity tools? I'm always looking for a better setup.
+"""
+
+[[post]]
+id = "x-show-26"
+platforms = ["x"]
+text = """
+What's the newest thing you've added to your product?
+"""
+
+[[post]]
+id = "x-connect-13"
+platforms = ["x"]
+text = """
+Let's make this a thread of indie builders. Reply with what you build, and check out someone else's reply too.
+"""
+
+[[post]]
+id = "x-show-27"
+platforms = ["x"]
+text = """
+Building something for creators? What does it help them do?
+"""
+
+[[post]]
+id = "x-show-28"
+platforms = ["x"]
+text = """
+What's your product called, and how did you pick the name?
+"""
+
+[[post]]
+id = "x-connect-14"
+platforms = ["x"]
+text = """
+What's your favorite thing about the indie builder community?
+"""
+
+[[post]]
+id = "x-show-29"
+platforms = ["x"]
+text = """
+Open source builders: what's your project, and what kind of help does it need?
+"""
+
+[[post]]
+id = "x-show-30"
+platforms = ["x"]
+text = """
+What tool did you build because nothing else did it right?
+"""
+
+[[post]]
+id = "x-connect-15"
+platforms = ["x"]
+text = """
+What are you working on today, and what's the hardest part of it right now?
+"""
+
+[[post]]
+id = "x-show-31"
+platforms = ["x"]
+text = """
+What's the first thing people see when they open your app?
+"""
+
+[[post]]
+id = "x-show-32"
+platforms = ["x"]
+text = """
+Building in a "boring" niche? Those are often the best ones. What's yours?
+"""
+
+[[post]]
+id = "x-connect-16"
+platforms = ["x"]
+text = """
+If you could ask one experienced founder one question, what would it be?
+"""
+
+[[post]]
+id = "x-show-33"
+platforms = ["x"]
+text = """
+What's your product, and what do your users love most about it?
+"""
+
+[[post]]
+id = "x-show-34"
+platforms = ["x"]
+text = """
+What are you building that you wish had existed five years ago?
+"""
+
+[[post]]
+id = "x-connect-17"
+platforms = ["x"]
+text = """
+Developers who build their own products: what's your stack, and what are you making?
+"""
+
+[[post]]
+id = "x-show-35"
+platforms = ["x"]
+text = """
+Indie hackers: what's live right now, and what's next on your roadmap?
+"""
+
+[[post]]
+id = "x-show-36"
+platforms = ["x"]
+text = """
+Launched something recently? Tell me what it is and where you launched it.
+"""
+
+[[post]]
+id = "x-connect-18"
+platforms = ["x"]
+text = """
+Anyone here working on SEO or content for their product? I'd love to connect.
+"""
+
+[[post]]
+id = "x-show-37"
+platforms = ["x"]
+text = """
+What's the smallest product you've shipped that people actually use?
+"""
+
+[[post]]
+id = "x-show-38"
+platforms = ["x"]
+text = """
+Name your product and the kind of person who should try it.
+"""
+
+[[post]]
+id = "x-connect-19"
+platforms = ["x"]
+text = """
+What's a small win you had this week? Share it.
+"""
+
+[[post]]
+id = "x-show-39"
+platforms = ["x"]
+text = """
+Building a micro-SaaS? Tell me what it does in one line.
+"""
+
+[[post]]
+id = "x-show-40"
+platforms = ["x"]
+text = """
+What product are you working on today, and what's today's task?
+"""
+
+[[post]]
+id = "x-connect-20"
+platforms = ["x"]
+text = """
+What's the best advice another builder ever gave you?
+"""
