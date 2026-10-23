@@ -335,6 +335,11 @@
       "url": "https://x.com/i/web/status/2113424460325789974",
       "cost_usd": 0.015,
       "posted_at": "2026-10-23T00:17:11Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myjqhsgxed2j",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myjqhsgxed2j",
+      "posted_at": "2026-10-23T08:17:13Z"
     }
   },
   "q-onetime-vs-sub": {
@@ -343,6 +348,14 @@
       "url": "https://x.com/i/web/status/2113530163212472626",
       "cost_usd": 0.015,
       "posted_at": "2026-10-23T07:17:13Z"
+    }
+  },
+  "q-weekend": {
+    "x": {
+      "id": "2113545261679067622",
+      "url": "https://x.com/i/web/status/2113545261679067622",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-23T08:17:12Z"
     }
   }
 }
