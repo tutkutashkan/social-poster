@@ -410,5 +410,13 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-23T19:17:12Z"
     }
+  },
+  "q-build-in-public": {
+    "x": {
+      "id": "2113741550077317327",
+      "url": "https://x.com/i/web/status/2113741550077317327",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-23T21:17:11Z"
+    }
   }
 }
