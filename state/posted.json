@@ -565,5 +565,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-24T18:17:12Z"
     }
+  },
+  "q-ereader-ama": {
+    "x": {
+      "id": "2114073762198929667",
+      "url": "https://x.com/i/web/status/2114073762198929667",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-24T19:17:17Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mynfszhwwz2p",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mynfszhwwz2p",
+      "posted_at": "2026-10-24T19:17:17Z"
+    }
   }
 }
