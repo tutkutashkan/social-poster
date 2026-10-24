@@ -557,5 +557,13 @@
       "note": "X posted this while Bluesky was behind; skipped to keep them in step",
       "posted_at": "2026-10-24T17:18:19Z"
     }
+  },
+  "x-connect-06": {
+    "x": {
+      "id": "2114058643695915467",
+      "url": "https://x.com/i/web/status/2114058643695915467",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-24T18:17:12Z"
+    }
   }
 }
