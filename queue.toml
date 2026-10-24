@@ -368,6 +368,9 @@ What's the one number you check first thing every morning?
 # Dev tip
 [[post]]
 id = "tip-hard-links"
+card = "Most USB sticks don't support hard links."
+image = "images/tip-hard-links.png"
+alt = "Text card: Most USB sticks don't support hard links."
 text = """
 Dev tip: a hard link gives a file a second name without copying it.
 
@@ -388,6 +391,9 @@ Mine's about 1.5 GB, because PDFs need a lot of tools. Beat it.
 
 [[post]]
 id = "q-offline-first"
+card = "Offline desktop apps are underrated."
+image = "images/q-offline-first.png"
+alt = "Text card: Offline desktop apps are underrated."
 platforms = ["x", "bluesky"]
 text = """
 Unpopular opinion: offline desktop apps are underrated for indie devs.
@@ -400,6 +406,9 @@ Change my mind.
 # Dev tip
 [[post]]
 id = "tip-supabase-redirects"
+card = "Check your login redirects after every config push."
+image = "images/tip-supabase-redirects.png"
+alt = "Text card: Check your login redirects after every config push."
 text = """
 Supabase tip: a local config.toml points login redirects to 127.0.0.1 by default.
 
@@ -427,6 +436,9 @@ Reply with it. I'd love to see what you're working on.
 # Dev tip
 [[post]]
 id = "tip-docker-image-size"
+card = "Your Docker image might be shipping a whole browser."
+image = "images/tip-docker-image-size.png"
+alt = "Text card: Your Docker image might be shipping a whole browser."
 text = """
 Docker tip: check what your dependencies pull in. Some ship a full browser engine and graphics libraries a server never uses.
 
@@ -458,6 +470,10 @@ Share it. Someone might build it with you.
 # TrySEO
 [[post]]
 id = "tryseo-setup"
+card = "SEO shouldn't need a *full-time hire*."
+card_style = "tryseo"
+image = "images/tryseo-setup.png"
+alt = "TrySEO card: SEO shouldn't need a full-time hire."
 text = """
 SEO shouldn't need a full-time hire.
 
@@ -486,6 +502,10 @@ Honest numbers only.
 # TrySEO
 [[post]]
 id = "tryseo-no-promises"
+card = "Honest SEO can't promise rankings. It can *compound*."
+card_style = "tryseo"
+image = "images/tryseo-no-promises.png"
+alt = "TrySEO card: Honest SEO can't promise rankings. It can compound."
 text = """
 Honest SEO can't promise rankings.
 
@@ -498,6 +518,10 @@ link = "https://tryseo.org"
 # TrySEO
 [[post]]
 id = "tryseo-trial"
+card = "*3 days free.* Published articles stay, even if you cancel."
+card_style = "tryseo"
+image = "images/tryseo-trial.png"
+alt = "TrySEO card: 3 days free. Published articles stay, even if you cancel."
 text = """
 Thinking about starting SEO for your business?
 
@@ -510,6 +534,10 @@ link = "https://tryseo.org"
 # TrySEO
 [[post]]
 id = "tryseo-ai-builders"
+card = "Built it with Lovable, Bolt or v0? Now get it *found*."
+card_style = "tryseo"
+image = "images/tryseo-ai-builders.png"
+alt = "TrySEO card: Built it with Lovable, Bolt or v0? Now get it found."
 text = """
 Built your site with Lovable, Bolt or v0?
 
@@ -672,6 +700,9 @@ Building with AI? Tell me what your product actually does for people.
 
 [[post]]
 id = "x-reach-02"
+card = "One sentence a stranger understands in five seconds."
+image = "images/x-reach-02.png"
+alt = "Text card: One sentence a stranger understands in five seconds."
 platforms = ["x"]
 text = """
 Unpopular opinion: your landing page doesn't need more features listed.
@@ -740,6 +771,9 @@ What's a product you built that you're quietly proud of?
 
 [[post]]
 id = "x-reach-06"
+card = "Side projects rarely die from bad code. They die from silence."
+image = "images/x-reach-06.png"
+alt = "Text card: Side projects rarely die from bad code. They die from silence."
 platforms = ["x"]
 text = """
 Hot take: most side projects don't fail because of the code.
@@ -758,6 +792,9 @@ Who did you meet on here that changed how you build?
 
 [[post]]
 id = "x-reach-07"
+card = "Reply bigger. Ask real questions. Show up daily."
+image = "images/x-reach-07.png"
+alt = "Text card: Reply bigger. Ask real questions. Show up daily."
 platforms = ["x"]
 text = """
 3 things that grow reach on X faster than posting more:
@@ -811,6 +848,9 @@ What's one thing you could help other builders with? Offer it below.
 
 [[post]]
 id = "x-reach-10"
+card = "SEO isn't dead. It moved."
+image = "images/x-reach-10.png"
+alt = "Text card: SEO isn't dead. It moved."
 platforms = ["x"]
 text = """
 SEO isn't dead. It moved.
@@ -890,6 +930,10 @@ Who's building tools for small businesses? What does yours help with?
 
 [[post]]
 id = "x-reach-15"
+card = "Articles in your brand voice, published to your site *every month*."
+card_style = "tryseo"
+image = "images/x-reach-15.png"
+alt = "TrySEO card: Articles in your brand voice, published to your site every month."
 platforms = ["x"]
 text = """
 If writing a blog post every week sounds exhausting, that's exactly what TrySEO is for: articles in your brand voice, published to your site every month.
@@ -935,6 +979,9 @@ Weekend side project or full-time product? Tell me what you're working on.
 
 [[post]]
 id = "x-reach-18"
+card = "Nobody cares about your stack. They care what it does."
+image = "images/x-reach-18.png"
+alt = "Text card: Nobody cares about your stack. They care what it does."
 platforms = ["x"]
 text = """
 Nobody cares about your tech stack. They care what it does for them.
@@ -982,6 +1029,9 @@ What's the newest thing you've added to your product?
 
 [[post]]
 id = "x-reach-21"
+card = "The 5-second landing page test."
+image = "images/x-reach-21.png"
+alt = "Text card: The 5-second landing page test."
 platforms = ["x"]
 text = """
 The 5-second test: show your landing page to a stranger for five seconds, then ask what you sell.
@@ -1027,6 +1077,9 @@ What's your product called, and how did you pick the name?
 
 [[post]]
 id = "x-reach-24"
+card = "Your first 100 users are 100 small conversations."
+image = "images/x-reach-24.png"
+alt = "Text card: Your first 100 users are 100 small conversations."
 platforms = ["x"]
 text = """
 Your first 100 users won't come from launch day. They come from 100 small conversations.
@@ -1086,6 +1139,9 @@ What are you working on today, and what's the hardest part of it right now?
 
 [[post]]
 id = "x-reach-28"
+card = "The best marketing is boring."
+image = "images/x-reach-28.png"
+alt = "Text card: The best marketing is boring."
 platforms = ["x"]
 text = """
 The best marketing I see from indie builders is boring: answer real questions, consistently, for months.
@@ -1102,6 +1158,10 @@ What's the first thing people see when they open your app?
 
 [[post]]
 id = "x-reach-29"
+card = "What does *ChatGPT* say about your product?"
+card_style = "tryseo"
+image = "images/x-reach-29.png"
+alt = "TrySEO card: What does ChatGPT say about your product?"
 platforms = ["x"]
 text = """
 TrySEO tracks how your brand shows up when people ask ChatGPT, Claude and Gemini for recommendations.
@@ -1222,6 +1282,9 @@ Anyone here working on SEO or content for their product? I'd love to connect.
 
 [[post]]
 id = "x-reach-37"
+card = "Every customer question is a blog post waiting to be written."
+image = "images/x-reach-37.png"
+alt = "Text card: Every customer question is a blog post waiting to be written."
 platforms = ["x"]
 text = """
 Small habit, big payoff: write down every question a customer asks you. That list is your content plan.
@@ -1267,6 +1330,9 @@ What's a small win you had this week? Share it.
 
 [[post]]
 id = "x-reach-40"
+card = "AI assistants quote what they can find."
+image = "images/x-reach-40.png"
+alt = "Text card: AI assistants quote what they can find."
 platforms = ["x"]
 text = """
 Want AI assistants to recommend you? Publish clear answers to the exact questions your buyers ask. They quote what they can find.
@@ -1298,6 +1364,10 @@ What product are you working on today, and what's today's task?
 
 [[post]]
 id = "x-reach-42"
+card = "Start SEO *before* you need the traffic."
+card_style = "tryseo"
+image = "images/x-reach-42.png"
+alt = "TrySEO card: Start SEO before you need the traffic."
 platforms = ["x"]
 text = """
 SEO takes months to compound, so the best time to start is before you need the traffic.
