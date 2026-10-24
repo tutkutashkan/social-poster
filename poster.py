@@ -252,6 +252,14 @@ def problems(post, platform):
     text = planned_text(post, platform)
     if not text:
         return [f"no text for {platform}"]
+    poll = post.get("poll")
+    if poll is not None:
+        if post.get("platforms") != ["x"]:
+            return ['polls only work on X, so set platforms = ["x"]']
+        if not 2 <= len(poll) <= 4 or any(not o or len(o) > 25 for o in poll):
+            return ["a poll needs 2 to 4 options of at most 25 characters"]
+        if not 5 <= post.get("poll_minutes", 1440) <= 10080:
+            return ["poll_minutes must be between 5 and 10080"]
     length = text_length(text, platform)
     if length > LIMITS[platform]:
         return [f"{platform} text is {length} characters, limit is {LIMITS[platform]}"]
@@ -345,7 +353,10 @@ def x_request(method, url, json_body=None):
 
 def post_x(post):
     text = x_text(post)
-    data = x_request("POST", "https://api.x.com/2/tweets", {"text": text})["data"]
+    payload = {"text": text}
+    if post.get("poll"):
+        payload["poll"] = {"options": post["poll"], "duration_minutes": post.get("poll_minutes", 1440)}
+    data = x_request("POST", "https://api.x.com/2/tweets", payload)["data"]
     return {"id": data["id"], "url": f"https://x.com/i/web/status/{data['id']}", "cost_usd": x_cost(text)}
 
 
@@ -538,6 +549,8 @@ def show(post, platform):
         log(f"[link card: {post['link']}]")
     else:
         log(text)
+    if platform == "x" and post.get("poll"):
+        log("[poll: " + " | ".join(post["poll"]) + f", {post.get('poll_minutes', 1440) // 60} h]")
     log("")
 
 
