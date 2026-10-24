@@ -657,7 +657,6 @@ Founders who are also designers, developers or writers: what's your main skill, 
 
 [[post]]
 id = "x-reach-01"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Which do you trust most when picking a new tool?
@@ -673,7 +672,6 @@ Building with AI? Tell me what your product actually does for people.
 
 [[post]]
 id = "x-reach-02"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Unpopular opinion: your landing page doesn't need more features listed.
@@ -692,7 +690,6 @@ What did you launch this month? I'm looking for new things to try.
 
 [[post]]
 id = "x-reach-03"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Let's connect if you're into:
@@ -714,7 +711,6 @@ Where are you building from? Let's see how global this community is.
 
 [[post]]
 id = "x-reach-04"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Finish the sentence: "I'd ship faster if..."
@@ -729,7 +725,6 @@ Pre-launch founders: what are you building, and when does it go live?
 
 [[post]]
 id = "x-reach-05"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Solo founders: where did your first users come from?
@@ -745,7 +740,6 @@ What's a product you built that you're quietly proud of?
 
 [[post]]
 id = "x-reach-06"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hot take: most side projects don't fail because of the code.
@@ -764,7 +758,6 @@ Who did you meet on here that changed how you build?
 
 [[post]]
 id = "x-reach-07"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 3 things that grow reach on X faster than posting more:
@@ -787,7 +780,6 @@ Would someone who's never seen it understand it?
 
 [[post]]
 id = "x-reach-08"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Be honest: how often do you ship?
@@ -803,7 +795,6 @@ Who's building a SaaS that already has paying customers? What does it do?
 
 [[post]]
 id = "x-reach-09"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Looking to connect with people building SaaS, AI tools or anything SEO.
@@ -820,7 +811,6 @@ What's one thing you could help other builders with? Offer it below.
 
 [[post]]
 id = "x-reach-10"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 SEO isn't dead. It moved.
@@ -839,7 +829,6 @@ What's your side project, and what got you started on it?
 
 [[post]]
 id = "x-reach-11"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Fill in the blank: the best tool I paid for this year was ____.
@@ -854,7 +843,6 @@ What product makes your workday easier? Yours or someone else's.
 
 [[post]]
 id = "x-reach-12"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 What's harder for you?
@@ -870,7 +858,6 @@ New to building in public? Say hi. Everyone starts somewhere.
 
 [[post]]
 id = "x-reach-13"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Controversial: a waitlist is not validation. A payment is.
@@ -887,7 +874,6 @@ If your product could only keep one feature, which one would it be?
 
 [[post]]
 id = "x-reach-14"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 New faces welcome.
@@ -904,7 +890,6 @@ Who's building tools for small businesses? What does yours help with?
 
 [[post]]
 id = "x-reach-15"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 If writing a blog post every week sounds exhausting, that's exactly what TrySEO is for: articles in your brand voice, published to your site every month.
@@ -921,7 +906,6 @@ Which communities do you spend time in as a builder? I'm looking for good ones.
 
 [[post]]
 id = "x-reach-16"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Where do you start when looking for a new tool now?
@@ -937,7 +921,6 @@ Tell me about your product the way you'd tell a friend, not an investor.
 
 [[post]]
 id = "x-reach-17"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Finish this: "My product is like ____ but for ____."
@@ -952,7 +935,6 @@ Weekend side project or full-time product? Tell me what you're working on.
 
 [[post]]
 id = "x-reach-18"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Nobody cares about your tech stack. They care what it does for them.
@@ -969,7 +951,6 @@ Who do you follow for honest, practical advice on building products?
 
 [[post]]
 id = "x-reach-19"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Would you rather have...
@@ -985,7 +966,6 @@ Who's building productivity tools? I'm always looking for a better setup.
 
 [[post]]
 id = "x-reach-20"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Founders, devs, designers, marketers: let's grow together.
@@ -1002,7 +982,6 @@ What's the newest thing you've added to your product?
 
 [[post]]
 id = "x-reach-21"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 The 5-second test: show your landing page to a stranger for five seconds, then ask what you sell.
@@ -1019,7 +998,6 @@ Let's make this a thread of indie builders. Reply with what you build, and check
 
 [[post]]
 id = "x-reach-22"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Describe your week as a builder in three emojis.
@@ -1034,7 +1012,6 @@ Building something for creators? What does it help them do?
 
 [[post]]
 id = "x-reach-23"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Biggest time sink as a solo builder?
@@ -1050,7 +1027,6 @@ What's your product called, and how did you pick the name?
 
 [[post]]
 id = "x-reach-24"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Your first 100 users won't come from launch day. They come from 100 small conversations.
@@ -1067,7 +1043,6 @@ What's your favorite thing about the indie builder community?
 
 [[post]]
 id = "x-reach-25"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 If you're working on SEO or content for your product, let's connect. Always happy to talk shop. #connect #SEO
@@ -1082,7 +1057,6 @@ Open source builders: what's your project, and what kind of help does it need?
 
 [[post]]
 id = "x-reach-26"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 One word that describes building solo. Go.
@@ -1097,7 +1071,6 @@ What tool did you build because nothing else did it right?
 
 [[post]]
 id = "x-reach-27"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Do you publish content for SEO?
@@ -1113,7 +1086,6 @@ What are you working on today, and what's the hardest part of it right now?
 
 [[post]]
 id = "x-reach-28"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 The best marketing I see from indie builders is boring: answer real questions, consistently, for months.
@@ -1130,7 +1102,6 @@ What's the first thing people see when they open your app?
 
 [[post]]
 id = "x-reach-29"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 TrySEO tracks how your brand shows up when people ask ChatGPT, Claude and Gemini for recommendations.
@@ -1147,7 +1118,6 @@ Building in a "boring" niche? Those are often the best ones. What's yours?
 
 [[post]]
 id = "x-reach-30"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Name one tool you can't build without. Only one.
@@ -1162,7 +1132,6 @@ If you could ask one experienced founder one question, what would it be?
 
 [[post]]
 id = "x-reach-31"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 How many side projects are you running right now?
@@ -1178,7 +1147,6 @@ What's your product, and what do your users love most about it?
 
 [[post]]
 id = "x-reach-32"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Building in public works because people root for progress, not perfection.
@@ -1195,7 +1163,6 @@ What are you building that you wish had existed five years ago?
 
 [[post]]
 id = "x-reach-33"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Who's building in public from outside the US? Tell me where you're from and what you're making. #connect
@@ -1210,7 +1177,6 @@ Developers who build their own products: what's your stack, and what are you mak
 
 [[post]]
 id = "x-reach-34"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 SEO in one sentence: answer the questions your customers are already typing.
@@ -1227,7 +1193,6 @@ Indie hackers: what's live right now, and what's next on your roadmap?
 
 [[post]]
 id = "x-reach-35"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Best day to launch a product?
@@ -1243,7 +1208,6 @@ Launched something recently? Tell me what it is and where you launched it.
 
 [[post]]
 id = "x-reach-36"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Finish the sentence: "The hardest part of marketing is..."
@@ -1258,7 +1222,6 @@ Anyone here working on SEO or content for their product? I'd love to connect.
 
 [[post]]
 id = "x-reach-37"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Small habit, big payoff: write down every question a customer asks you. That list is your content plan.
@@ -1275,7 +1238,6 @@ What's the smallest product you've shipped that people actually use?
 
 [[post]]
 id = "x-reach-38"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Your side project stack is mostly...
@@ -1291,7 +1253,6 @@ Name your product and the kind of person who should try it.
 
 [[post]]
 id = "x-reach-39"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Let's make the replies useful: share your product, then check out the one above yours. #buildinpublic #connect
@@ -1306,7 +1267,6 @@ What's a small win you had this week? Share it.
 
 [[post]]
 id = "x-reach-40"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Want AI assistants to recommend you? Publish clear answers to the exact questions your buyers ask. They quote what they can find.
@@ -1323,7 +1283,6 @@ Building a micro-SaaS? Tell me what it does in one line.
 
 [[post]]
 id = "x-reach-41"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Pricing a new product: start at...
@@ -1339,7 +1298,6 @@ What product are you working on today, and what's today's task?
 
 [[post]]
 id = "x-reach-42"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 SEO takes months to compound, so the best time to start is before you need the traffic.
@@ -1356,7 +1314,6 @@ What's the best advice another builder ever gave you?
 
 [[post]]
 id = "x-reach-43"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 What's one thing you learned this week that you wish you'd known a year ago?
@@ -1364,7 +1321,6 @@ What's one thing you learned this week that you wish you'd known a year ago?
 
 [[post]]
 id = "x-reach-44"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Most underrated growth channel for indie products?
