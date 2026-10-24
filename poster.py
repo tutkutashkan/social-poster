@@ -199,6 +199,19 @@ def minutes_since_last_post(state, platform):
     return (dt.datetime.now(dt.timezone.utc) - last).total_seconds() / 60
 
 
+IMAGE_LIMITS = {"x": 5_000_000, "bluesky": 1_000_000, "linkedin": 8_000_000}
+
+
+def load_image(post):
+    """(content_type, bytes, (width, height) or None) for a post's image, or None."""
+    if not post.get("image"):
+        return None
+    data = (ROOT / post["image"]).read_bytes()
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return "image/png", data, (int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big"))
+    return "image/jpeg", data, None
+
+
 def configured(platform):
     return all(os.environ.get(name) for name in REQUIRED_ENV[platform])
 
@@ -252,6 +265,14 @@ def problems(post, platform):
     text = planned_text(post, platform)
     if not text:
         return [f"no text for {platform}"]
+    if post.get("image"):
+        path = ROOT / post["image"]
+        if not path.is_file():
+            return [f"image not found: {post['image']}"]
+        if path.stat().st_size > IMAGE_LIMITS[platform]:
+            return [f"image is over {platform}'s {IMAGE_LIMITS[platform] // 1_000_000} MB limit"]
+        if post.get("poll"):
+            return ["X doesn't allow an image and a poll in the same post"]
     poll = post.get("poll")
     if poll is not None:
         if post.get("platforms") != ["x"]:
@@ -351,9 +372,24 @@ def x_request(method, url, json_body=None):
     return json.loads(body)
 
 
+def x_upload_image(post):
+    _, data, _ = load_image(post)
+    media_id = x_request("POST", "https://api.x.com/2/media/upload", {
+        "media": base64.b64encode(data).decode(), "media_category": "tweet_image"})["data"]["id"]
+    if post.get("alt"):
+        try:
+            x_request("POST", "https://api.x.com/2/media/metadata", {
+                "id": media_id, "metadata": {"alt_text": {"text": post["alt"][:1000]}}})
+        except Exception as e:
+            warn(f"X alt text failed, posting the image without it: {e}")
+    return media_id
+
+
 def post_x(post):
     text = x_text(post)
     payload = {"text": text}
+    if post.get("image"):
+        payload["media"] = {"media_ids": [x_upload_image(post)]}
     if post.get("poll"):
         payload["poll"] = {"options": post["poll"], "duration_minutes": post.get("poll_minutes", 1440)}
     data = x_request("POST", "https://api.x.com/2/tweets", payload)["data"]
@@ -410,11 +446,25 @@ def bluesky_card(host, auth, link):
     return {"$type": "app.bsky.embed.external", "external": external}
 
 
+def bluesky_image(host, auth, post):
+    content_type, data, size = load_image(post)
+    _, body = http("POST", f"{host}/xrpc/com.atproto.repo.uploadBlob",
+                   headers={**auth, "Content-Type": content_type}, data=data)
+    image = {"alt": post.get("alt", ""), "image": json.loads(body)["blob"]}
+    if size:
+        image["aspectRatio"] = {"width": size[0], "height": size[1]}
+    return {"$type": "app.bsky.embed.images", "images": [image]}
+
+
 def post_bluesky(post):
     host, auth, session = bluesky_session()
     text, link = body_text(post, "bluesky"), post.get("link")
-    embed = bluesky_card(host, auth, link) if link else None
-    if link and not embed:
+    # A Bluesky post holds one embed: an image wins over a link card, and the link goes in the text.
+    if post.get("image"):
+        embed = bluesky_image(host, auth, post)
+    else:
+        embed = bluesky_card(host, auth, link) if link else None
+    if link and (post.get("image") or not embed):
         text = with_link(text, link)
     record = {"$type": "app.bsky.feed.post", "text": text, "createdAt": now_utc(),
               "langs": [post.get("lang", "en")]}
@@ -457,8 +507,8 @@ def linkedin_headers(token):
     }
 
 
-def linkedin_upload_image(token, owner, image_url):
-    content_type, data = fetch_image(image_url)
+def linkedin_upload_image(token, owner, image_url=None, image=None):
+    content_type, data = image if image else fetch_image(image_url)
     _, body = http("POST", "https://api.linkedin.com/rest/images?action=initializeUpload",
                    headers=linkedin_headers(token),
                    json_body={"initializeUploadRequest": {"owner": owner}})
@@ -486,7 +536,12 @@ def linkedin_article(token, author, link):
 def post_linkedin(post):
     token, author = env("LINKEDIN_ACCESS_TOKEN"), env("LINKEDIN_AUTHOR_URN")
     text, link = body_text(post, "linkedin"), post.get("link")
-    content = linkedin_article(token, author, link) if link else None
+    if post.get("image"):
+        content_type, data, _ = load_image(post)
+        urn = linkedin_upload_image(token, author, image=(content_type, data))
+        content = {"media": {"id": urn, "altText": post.get("alt", "")[:4000]}}
+    else:
+        content = linkedin_article(token, author, link) if link else None
 
     def send(text, content):
         payload = {
@@ -504,7 +559,9 @@ def post_linkedin(post):
                           headers=linkedin_headers(token), json_body=payload)
         return headers.get("x-restli-id")
 
-    if content:
+    if post.get("image"):
+        urn = send(with_link(text, link), content)
+    elif content:
         try:
             urn = send(text, content)
         except RuntimeError as e:
@@ -549,6 +606,8 @@ def show(post, platform):
         log(f"[link card: {post['link']}]")
     else:
         log(text)
+    if post.get("image"):
+        log(f"[image: {post['image']}]")
     if platform == "x" and post.get("poll"):
         log("[poll: " + " | ".join(post["poll"]) + f", {post.get('poll_minutes', 1440) // 60} h]")
     log("")
