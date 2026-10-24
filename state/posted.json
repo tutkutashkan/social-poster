@@ -361,6 +361,11 @@
       "url": "https://x.com/i/web/status/2113545261679067622",
       "cost_usd": 0.015,
       "posted_at": "2026-10-23T08:17:12Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mymawpp6dx2v",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mymawpp6dx2v",
+      "posted_at": "2026-10-24T08:17:13Z"
     }
   },
   "x-show-09": {
@@ -441,6 +446,14 @@
       "url": "https://x.com/i/web/status/2113892544421528016",
       "cost_usd": 0.015,
       "posted_at": "2026-10-24T07:17:11Z"
+    }
+  },
+  "q-first-users": {
+    "x": {
+      "id": "2113907646726340978",
+      "url": "https://x.com/i/web/status/2113907646726340978",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-24T08:17:12Z"
     }
   }
 }
