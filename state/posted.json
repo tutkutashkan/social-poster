@@ -610,5 +610,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-25T07:17:12Z"
     }
+  },
+  "q-one-metric": {
+    "x": {
+      "id": "2114270030984556880",
+      "url": "https://x.com/i/web/status/2114270030984556880",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-25T08:17:11Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myorflu7hb2w",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myorflu7hb2w",
+      "posted_at": "2026-10-25T08:17:11Z"
+    }
   }
 }
