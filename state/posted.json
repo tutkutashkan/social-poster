@@ -708,5 +708,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-26T07:17:13Z"
     }
+  },
+  "q-docker-size": {
+    "x": {
+      "id": "2114632425511010791",
+      "url": "https://x.com/i/web/status/2114632425511010791",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-26T08:17:12Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myrbuksqco2p",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myrbuksqco2p",
+      "posted_at": "2026-10-26T08:17:13Z"
+    }
   }
 }
