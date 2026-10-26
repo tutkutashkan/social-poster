@@ -774,5 +774,13 @@
       "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mysgqrrjmw2f",
       "posted_at": "2026-10-26T19:17:15Z"
     }
+  },
+  "x-reach-10": {
+    "x": {
+      "id": "2114828721035309316",
+      "url": "https://x.com/i/web/status/2114828721035309316",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-26T21:17:13Z"
+    }
   }
 }
