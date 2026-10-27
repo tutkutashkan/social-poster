@@ -806,5 +806,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-27T07:17:11Z"
     }
+  },
+  "tip-supabase-redirects": {
+    "x": {
+      "id": "2114994811639841128",
+      "url": "https://x.com/i/web/status/2114994811639841128",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-27T08:17:12Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mytsdj6jpg2z",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mytsdj6jpg2z",
+      "posted_at": "2026-10-27T08:17:15Z"
+    }
   }
 }
