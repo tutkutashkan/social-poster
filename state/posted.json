@@ -859,5 +859,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-10-27T18:17:14Z"
     }
+  },
+  "q-outsource": {
+    "x": {
+      "id": "2115160910083875131",
+      "url": "https://x.com/i/web/status/2115160910083875131",
+      "cost_usd": 0.015,
+      "posted_at": "2026-10-27T19:17:13Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3myux7oa2gy22",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3myux7oa2gy22",
+      "posted_at": "2026-10-27T19:17:13Z"
+    }
   }
 }
