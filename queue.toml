@@ -1022,7 +1022,6 @@ Introduce yourself in one line. #connect #buildinpublic
 
 [[post]]
 id = "x-grok-01"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, name 3 skills solo founders will still need in 2035 that AI can't replace. Explain why.
@@ -1063,7 +1062,6 @@ Describe your week as a builder in three emojis.
 
 [[post]]
 id = "x-grok-02"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, will people still use Google search in 2030, or will AI assistants replace it? Give me your honest prediction.
@@ -1105,7 +1103,6 @@ Where are you having yours?
 
 [[post]]
 id = "x-grok-03"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's the most underrated way for a new product to get its first 100 users in 2026?
@@ -1141,7 +1138,6 @@ One word that describes building solo. Go.
 
 [[post]]
 id = "x-grok-04"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, if you had to build a profitable one-person business from zero today, what would you build first, and why?
@@ -1183,7 +1179,6 @@ What's the most boring thing that worked for you?
 
 [[post]]
 id = "x-grok-05"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, how do AI assistants decide which websites to recommend when someone asks for the best tool? Be specific.
@@ -1225,7 +1220,6 @@ Name one tool you can't build without. Only one.
 
 [[post]]
 id = "x-grok-06"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what will a normal workday look like for a software developer in 2035?
@@ -1264,7 +1258,6 @@ Share one small thing you improved today.
 
 [[post]]
 id = "x-grok-07"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, name 3 jobs AI will create in the next 10 years that don't exist yet.
@@ -1302,7 +1295,6 @@ What do your customers ask most?
 
 [[post]]
 id = "x-grok-08"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, is it smarter to go deep on one product or launch many small ones and see what sticks? Pick one and defend it.
@@ -1339,7 +1331,6 @@ Finish the sentence: "The hardest part of marketing is..."
 
 [[post]]
 id = "x-grok-09"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's the biggest marketing mistake first-time founders make? One answer only.
@@ -1381,7 +1372,6 @@ poll = ["Next.js", "Rails / Laravel", "Python", "No-code"]
 
 [[post]]
 id = "x-grok-10"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, will blogs still matter when everyone asks AI for answers? Explain your reasoning.
@@ -1422,7 +1412,6 @@ Checked what ChatGPT says about your niche?
 
 [[post]]
 id = "x-grok-11"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, rank these for growing a product in 2026: SEO, X, Reddit, YouTube, newsletters. Explain your top pick.
@@ -1465,7 +1454,6 @@ TrySEO starts with a 3-day free trial. What's stopping you?
 
 [[post]]
 id = "x-grok-12"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's one habit that separates founders who make it from the ones who quit?
@@ -1495,7 +1483,6 @@ poll = ["SEO", "Reddit", "Newsletters", "Partnerships"]
 
 [[post]]
 id = "x-grok-13"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, in 2040, will most software be written by humans, by AI, or both? Make a prediction.
@@ -1503,7 +1490,6 @@ Hey @grok, in 2040, will most software be written by humans, by AI, or both? Mak
 
 [[post]]
 id = "x-grok-14"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's the fastest way for a brand new website to start showing up in AI search answers?
@@ -1511,7 +1497,6 @@ Hey @grok, what's the fastest way for a brand new website to start showing up in
 
 [[post]]
 id = "x-grok-15"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's the best way for a small creator to earn attention without paying for ads?
@@ -1519,7 +1504,6 @@ Hey @grok, what's the best way for a small creator to earn attention without pay
 
 [[post]]
 id = "x-grok-16"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, name a business that AI makes possible today that was impossible 3 years ago.
@@ -1527,7 +1511,6 @@ Hey @grok, name a business that AI makes possible today that was impossible 3 ye
 
 [[post]]
 id = "x-grok-17"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, once AI makes most content free, what will people still pay a premium for?
@@ -1535,7 +1518,6 @@ Hey @grok, once AI makes most content free, what will people still pay a premium
 
 [[post]]
 id = "x-grok-18"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, give me one contrarian prediction about the internet in 2030 that most people will disagree with.
@@ -1543,7 +1525,6 @@ Hey @grok, give me one contrarian prediction about the internet in 2030 that mos
 
 [[post]]
 id = "x-grok-19"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, how many hours a day should a solo founder spend on marketing vs building? Give a number and explain.
@@ -1551,7 +1532,6 @@ Hey @grok, how many hours a day should a solo founder spend on marketing vs buil
 
 [[post]]
 id = "x-grok-20"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Hey @grok, what's the most important thing a 20-year-old should learn right now to stay valuable in an AI world?
