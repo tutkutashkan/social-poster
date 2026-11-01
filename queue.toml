@@ -91,6 +91,7 @@ What's yours, and what would you never use again?
 # Dev tip
 [[post]]
 id = "tip-ffmpeg-percent-d"
+draft = true  # parked: low impressions (Nov 1 review)
 text = """
 FFmpeg tip: it treats %d in a file name as a placeholder for a frame number.
 
@@ -160,6 +161,7 @@ Domain first, or name first?
 # Dev tip
 [[post]]
 id = "tip-css-important"
+draft = true  # parked: low impressions (Nov 1 review)
 text = """
 CSS tip: !important feels like a quick fix, but each one makes the next one more likely.
 
@@ -219,6 +221,7 @@ Do you do your best building late at night or first thing in the morning?
 # Dev tip
 [[post]]
 id = "tip-stripe-webhook-order"
+draft = true  # parked: low impressions (Nov 1 review)
 text = """
 Stripe tip: webhook events don't always arrive in order.
 
@@ -343,6 +346,7 @@ I need a better rule than "when I'm tired of looking at it."
 # Dev tip
 [[post]]
 id = "tip-validate-output"
+draft = true  # parked: low impressions (Nov 1 review)
 text = """
 If your app creates a standard file format, run the official validator on its output. For EPUB it's epubcheck.
 
@@ -368,6 +372,7 @@ What's the one number you check first thing every morning?
 # Dev tip
 [[post]]
 id = "tip-hard-links"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "Most USB sticks don't support hard links."
 image = "images/tip-hard-links.png"
 alt = "Text card: Most USB sticks don't support hard links."
@@ -406,6 +411,7 @@ Change my mind.
 # Dev tip
 [[post]]
 id = "tip-supabase-redirects"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "Check your login redirects after every config push."
 image = "images/tip-supabase-redirects.png"
 alt = "Text card: Check your login redirects after every config push."
@@ -436,6 +442,7 @@ Reply with it. I'd love to see what you're working on.
 # Dev tip
 [[post]]
 id = "tip-docker-image-size"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "Your Docker image might be shipping a whole browser."
 image = "images/tip-docker-image-size.png"
 alt = "Text card: Your Docker image might be shipping a whole browser."
@@ -1331,20 +1338,15 @@ Finish the sentence: "The hardest part of marketing is..."
 
 [[post]]
 id = "x-grok-09"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Hey @grok, what's the biggest marketing mistake first-time founders make? One answer only.
 """
 
 [[post]]
-id = "x-connect-18"
-platforms = ["x"]
-text = """
-Anyone here working on SEO or content for their product? I'd love to connect.
-"""
-
-[[post]]
 id = "x-reach-37"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "Every customer question is a blog post waiting to be written."
 image = "images/x-reach-37.png"
 alt = "Text card: Every customer question is a blog post waiting to be written."
@@ -1356,14 +1358,8 @@ What's the question you get most?
 """
 
 [[post]]
-id = "x-show-37"
-platforms = ["x"]
-text = """
-What's the smallest product you've shipped that people actually use?
-"""
-
-[[post]]
 id = "x-reach-38"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Your side project stack is mostly...
@@ -1372,34 +1368,15 @@ poll = ["Next.js", "Rails / Laravel", "Python", "No-code"]
 
 [[post]]
 id = "x-grok-10"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Hey @grok, will blogs still matter when everyone asks AI for answers? Explain your reasoning.
 """
 
 [[post]]
-id = "x-show-38"
-platforms = ["x"]
-text = """
-Name your product and the kind of person who should try it.
-"""
-
-[[post]]
-id = "x-reach-39"
-platforms = ["x"]
-text = """
-Let's make the replies useful: share your product, then check out the one above yours. #buildinpublic #connect
-"""
-
-[[post]]
-id = "x-connect-19"
-platforms = ["x"]
-text = """
-What's a small win you had this week? Share it.
-"""
-
-[[post]]
 id = "x-reach-40"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "AI assistants quote what they can find."
 image = "images/x-reach-40.png"
 alt = "Text card: AI assistants quote what they can find."
@@ -1412,20 +1389,15 @@ Checked what ChatGPT says about your niche?
 
 [[post]]
 id = "x-grok-11"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Hey @grok, rank these for growing a product in 2026: SEO, X, Reddit, YouTube, newsletters. Explain your top pick.
 """
 
 [[post]]
-id = "x-show-39"
-platforms = ["x"]
-text = """
-Building a micro-SaaS? Tell me what it does in one line.
-"""
-
-[[post]]
 id = "x-reach-41"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Pricing a new product: start at...
@@ -1433,14 +1405,8 @@ Pricing a new product: start at...
 poll = ["Free", "Under $10", "$10 to $30", "$30+"]
 
 [[post]]
-id = "x-show-40"
-platforms = ["x"]
-text = """
-What product are you working on today, and what's today's task?
-"""
-
-[[post]]
 id = "x-reach-42"
+draft = true  # parked: low impressions (Nov 1 review)
 card = "Start SEO *before* you need the traffic."
 card_style = "tryseo"
 image = "images/x-reach-42.png"
@@ -1454,9 +1420,182 @@ TrySEO starts with a 3-day free trial. What's stopping you?
 
 [[post]]
 id = "x-grok-12"
+draft = true  # parked: low impressions (Nov 1 review)
 platforms = ["x"]
 text = """
 Hey @grok, what's one habit that separates founders who make it from the ones who quit?
+"""
+
+[[post]]
+id = "x-reach-43"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+What's one thing you learned this week that you wish you'd known a year ago?
+"""
+
+[[post]]
+id = "x-reach-44"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Most underrated growth channel for indie products?
+"""
+poll = ["SEO", "Reddit", "Newsletters", "Partnerships"]
+
+[[post]]
+id = "x-grok-13"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, in 2040, will most software be written by humans, by AI, or both? Make a prediction.
+"""
+
+[[post]]
+id = "x-grok-14"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, what's the fastest way for a brand new website to start showing up in AI search answers?
+"""
+
+[[post]]
+id = "x-grok-15"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, what's the best way for a small creator to earn attention without paying for ads?
+"""
+
+[[post]]
+id = "x-grok-16"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, name a business that AI makes possible today that was impossible 3 years ago.
+"""
+
+[[post]]
+id = "x-grok-17"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, once AI makes most content free, what will people still pay a premium for?
+"""
+
+[[post]]
+id = "x-grok-18"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, give me one contrarian prediction about the internet in 2030 that most people will disagree with.
+"""
+
+[[post]]
+id = "x-grok-19"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, how many hours a day should a solo founder spend on marketing vs building? Give a number and explain.
+"""
+
+[[post]]
+id = "x-grok-20"
+draft = true  # parked: low impressions (Nov 1 review)
+platforms = ["x"]
+text = """
+Hey @grok, what's the most important thing a 20-year-old should learn right now to stay valuable in an AI world?
+"""
+
+[[post]]
+id = "x-reach-39"
+platforms = ["x"]
+text = """
+Let's make the replies useful: share your product, then check out the one above yours. #buildinpublic #connect
+"""
+
+[[post]]
+id = "x-connect-18"
+platforms = ["x"]
+text = """
+Anyone here working on SEO or content for their product? I'd love to connect.
+"""
+
+[[post]]
+id = "x-connect2-01"
+platforms = ["x"]
+text = """
+Who's building something this week? Drop your name and your project, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-show-37"
+platforms = ["x"]
+text = """
+What's the smallest product you've shipped that people actually use?
+"""
+
+[[post]]
+id = "x-connect2-02"
+platforms = ["x"]
+text = """
+Indie hackers, founders, makers: introduce yourself in one line, then say hi to someone else in the replies. #connect
+"""
+
+[[post]]
+id = "x-show-38"
+platforms = ["x"]
+text = """
+Name your product and the kind of person who should try it.
+"""
+
+[[post]]
+id = "x-connect2-03"
+platforms = ["x"]
+text = """
+Let's connect. Reply with what you're working on and one thing you need help with. #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect-19"
+platforms = ["x"]
+text = """
+What's a small win you had this week? Share it.
+"""
+
+[[post]]
+id = "x-connect2-04"
+platforms = ["x"]
+text = """
+If you're into SEO, AI or building online businesses, let's connect. Say hi below. #connect #SEO
+"""
+
+[[post]]
+id = "x-show-39"
+platforms = ["x"]
+text = """
+Building a micro-SaaS? Tell me what it does in one line.
+"""
+
+[[post]]
+id = "x-connect2-05"
+platforms = ["x"]
+text = """
+Growing on X this month? Let's grow together. Tell me your niche. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-show-40"
+platforms = ["x"]
+text = """
+What product are you working on today, and what's today's task?
+"""
+
+[[post]]
+id = "x-connect2-06"
+platforms = ["x"]
+text = """
+Looking for new people to learn from. What do you build, and what's your timezone? #connect
 """
 
 [[post]]
@@ -1467,127 +1606,7 @@ What's the best advice another builder ever gave you?
 """
 
 [[post]]
-id = "x-reach-43"
-platforms = ["x"]
-text = """
-What's one thing you learned this week that you wish you'd known a year ago?
-"""
-
-[[post]]
-id = "x-reach-44"
-platforms = ["x"]
-text = """
-Most underrated growth channel for indie products?
-"""
-poll = ["SEO", "Reddit", "Newsletters", "Partnerships"]
-
-[[post]]
-id = "x-grok-13"
-platforms = ["x"]
-text = """
-Hey @grok, in 2040, will most software be written by humans, by AI, or both? Make a prediction.
-"""
-
-[[post]]
-id = "x-grok-14"
-platforms = ["x"]
-text = """
-Hey @grok, what's the fastest way for a brand new website to start showing up in AI search answers?
-"""
-
-[[post]]
-id = "x-grok-15"
-platforms = ["x"]
-text = """
-Hey @grok, what's the best way for a small creator to earn attention without paying for ads?
-"""
-
-[[post]]
-id = "x-grok-16"
-platforms = ["x"]
-text = """
-Hey @grok, name a business that AI makes possible today that was impossible 3 years ago.
-"""
-
-[[post]]
-id = "x-grok-17"
-platforms = ["x"]
-text = """
-Hey @grok, once AI makes most content free, what will people still pay a premium for?
-"""
-
-[[post]]
-id = "x-grok-18"
-platforms = ["x"]
-text = """
-Hey @grok, give me one contrarian prediction about the internet in 2030 that most people will disagree with.
-"""
-
-[[post]]
-id = "x-grok-19"
-platforms = ["x"]
-text = """
-Hey @grok, how many hours a day should a solo founder spend on marketing vs building? Give a number and explain.
-"""
-
-[[post]]
-id = "x-grok-20"
-platforms = ["x"]
-text = """
-Hey @grok, what's the most important thing a 20-year-old should learn right now to stay valuable in an AI world?
-"""
-
-[[post]]
-id = "x-connect2-01"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-Who's building something this week? Drop your name and your project, and let's connect. #connect #buildinpublic
-"""
-
-[[post]]
-id = "x-connect2-02"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-Indie hackers, founders, makers: introduce yourself in one line, then say hi to someone else in the replies. #connect
-"""
-
-[[post]]
-id = "x-connect2-03"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-Let's connect. Reply with what you're working on and one thing you need help with. #connect #indiehackers
-"""
-
-[[post]]
-id = "x-connect2-04"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-If you're into SEO, AI or building online businesses, let's connect. Say hi below. #connect #SEO
-"""
-
-[[post]]
-id = "x-connect2-05"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-Growing on X this month? Let's grow together. Tell me your niche. #connect #buildinpublic
-"""
-
-[[post]]
-id = "x-connect2-06"
-draft = true  # held for your review
-platforms = ["x"]
-text = """
-Looking for new people to learn from. What do you build, and what's your timezone? #connect
-"""
-
-[[post]]
 id = "x-connect2-07"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Solo founders, you're not alone in this. Introduce yourself and what you're building. #connect #solofounder
@@ -1595,7 +1614,6 @@ Solo founders, you're not alone in this. Introduce yourself and what you're buil
 
 [[post]]
 id = "x-connect2-08"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Who's working on an AI product right now? Tell me what it does, and let's connect. #connect #AI
@@ -1603,7 +1621,6 @@ Who's working on an AI product right now? Tell me what it does, and let's connec
 
 [[post]]
 id = "x-connect2-09"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Developers who also market their own products: let's connect. What are you shipping? #connect #buildinpublic
@@ -1611,7 +1628,6 @@ Developers who also market their own products: let's connect. What are you shipp
 
 [[post]]
 id = "x-connect2-10"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Small accounts welcome. Reply with your name and what you do, and connect with someone new today. #connect
@@ -1619,7 +1635,6 @@ Small accounts welcome. Reply with your name and what you do, and connect with s
 
 [[post]]
 id = "x-connect2-11"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 What country are you building from? Let's see how far this reaches. #connect #buildinpublic
@@ -1627,7 +1642,6 @@ What country are you building from? Let's see how far this reaches. #connect #bu
 
 [[post]]
 id = "x-connect2-12"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Let's connect if you're building a SaaS. Share your one-line pitch. #connect #SaaS
@@ -1635,7 +1649,6 @@ Let's connect if you're building a SaaS. Share your one-line pitch. #connect #Sa
 
 [[post]]
 id = "x-connect2-13"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Marketers, designers, developers, writers: introduce yourself with one emoji that sums up your work. #connect
@@ -1643,7 +1656,6 @@ Marketers, designers, developers, writers: introduce yourself with one emoji tha
 
 [[post]]
 id = "x-connect2-14"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Night owls who build after work, say hi. What are you working on? #connect
@@ -1651,7 +1663,6 @@ Night owls who build after work, say hi. What are you working on? #connect
 
 [[post]]
 id = "x-connect2-15"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 New here? Tell me your name and your goal for this month. Let's connect. #connect
@@ -1659,7 +1670,6 @@ New here? Tell me your name and your goal for this month. Let's connect. #connec
 
 [[post]]
 id = "x-connect2-16"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Who's trying to get their first 100 customers? Let's connect and swap notes. #connect #startups
@@ -1667,7 +1677,6 @@ Who's trying to get their first 100 customers? Let's connect and swap notes. #co
 
 [[post]]
 id = "x-connect2-17"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Content creators and builders: let's grow together. What do you post about? #connect #buildinpublic
@@ -1675,7 +1684,6 @@ Content creators and builders: let's grow together. What do you post about? #con
 
 [[post]]
 id = "x-connect2-18"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Introduce yourself in three words, then say hi to the person above you. #connect
@@ -1683,7 +1691,6 @@ Introduce yourself in three words, then say hi to the person above you. #connect
 
 [[post]]
 id = "x-connect2-19"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Let's connect if you care about SEO, AI search or getting found online. What are you working on? #connect #SEO
@@ -1691,7 +1698,6 @@ Let's connect if you care about SEO, AI search or getting found online. What are
 
 [[post]]
 id = "x-connect2-20"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Building in public is better with company. Reply with your project and how long you've been at it. #connect #buildinpublic
@@ -1699,7 +1705,6 @@ Building in public is better with company. Reply with your project and how long 
 
 [[post]]
 id = "x-connect2-21"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Who's learning to code, build or sell online right now? Let's connect and learn together. #connect
@@ -1707,7 +1712,6 @@ Who's learning to code, build or sell online right now? Let's connect and learn 
 
 [[post]]
 id = "x-connect2-22"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Founders from Europe, say hi. What are you building? #connect #buildinpublic
@@ -1715,7 +1719,6 @@ Founders from Europe, say hi. What are you building? #connect #buildinpublic
 
 [[post]]
 id = "x-connect2-23"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Founders from Asia and the Middle East, say hi. What are you building? #connect
@@ -1723,7 +1726,6 @@ Founders from Asia and the Middle East, say hi. What are you building? #connect
 
 [[post]]
 id = "x-connect2-24"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Founders from Africa and Latin America, let's connect. What are you working on? #connect #buildinpublic
@@ -1731,7 +1733,6 @@ Founders from Africa and Latin America, let's connect. What are you working on? 
 
 [[post]]
 id = "x-connect2-25"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Tag one builder more people should know about, and introduce yourself too. #connect
@@ -1739,7 +1740,6 @@ Tag one builder more people should know about, and introduce yourself too. #conn
 
 [[post]]
 id = "x-connect2-26"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 What's your one-sentence bio? Let's connect with people who do similar work. #connect
@@ -1747,7 +1747,6 @@ What's your one-sentence bio? Let's connect with people who do similar work. #co
 
 [[post]]
 id = "x-connect2-27"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Freelancers, agency owners and consultants, let's connect. What service do you offer? #connect
@@ -1755,7 +1754,6 @@ Freelancers, agency owners and consultants, let's connect. What service do you o
 
 [[post]]
 id = "x-connect2-28"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Ecommerce and Shopify builders, let's connect. What do you sell? #connect #ecommerce
@@ -1763,7 +1761,6 @@ Ecommerce and Shopify builders, let's connect. What do you sell? #connect #ecomm
 
 [[post]]
 id = "x-connect2-29"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Building something with no-code or AI tools? Show me, and let's connect. #connect #nocode
@@ -1771,7 +1768,6 @@ Building something with no-code or AI tools? Show me, and let's connect. #connec
 
 [[post]]
 id = "x-connect2-30"
-draft = true  # held for your review
 platforms = ["x"]
 text = """
 Looking to connect with people who post every day. What's your niche? #connect #buildinpublic
