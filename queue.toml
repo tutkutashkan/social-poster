@@ -1536,3 +1536,243 @@ platforms = ["x"]
 text = """
 Hey @grok, what's the most important thing a 20-year-old should learn right now to stay valuable in an AI world?
 """
+
+[[post]]
+id = "x-connect2-01"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Who's building something this week? Drop your name and your project, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-02"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Indie hackers, founders, makers: introduce yourself in one line, then say hi to someone else in the replies. #connect
+"""
+
+[[post]]
+id = "x-connect2-03"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Let's connect. Reply with what you're working on and one thing you need help with. #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect2-04"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+If you're into SEO, AI or building online businesses, let's connect. Say hi below. #connect #SEO
+"""
+
+[[post]]
+id = "x-connect2-05"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Growing on X this month? Let's grow together. Tell me your niche. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-06"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Looking for new people to learn from. What do you build, and what's your timezone? #connect
+"""
+
+[[post]]
+id = "x-connect2-07"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Solo founders, you're not alone in this. Introduce yourself and what you're building. #connect #solofounder
+"""
+
+[[post]]
+id = "x-connect2-08"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Who's working on an AI product right now? Tell me what it does, and let's connect. #connect #AI
+"""
+
+[[post]]
+id = "x-connect2-09"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Developers who also market their own products: let's connect. What are you shipping? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-10"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Small accounts welcome. Reply with your name and what you do, and connect with someone new today. #connect
+"""
+
+[[post]]
+id = "x-connect2-11"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+What country are you building from? Let's see how far this reaches. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-12"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Let's connect if you're building a SaaS. Share your one-line pitch. #connect #SaaS
+"""
+
+[[post]]
+id = "x-connect2-13"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Marketers, designers, developers, writers: introduce yourself with one emoji that sums up your work. #connect
+"""
+
+[[post]]
+id = "x-connect2-14"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Night owls who build after work, say hi. What are you working on? #connect
+"""
+
+[[post]]
+id = "x-connect2-15"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+New here? Tell me your name and your goal for this month. Let's connect. #connect
+"""
+
+[[post]]
+id = "x-connect2-16"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Who's trying to get their first 100 customers? Let's connect and swap notes. #connect #startups
+"""
+
+[[post]]
+id = "x-connect2-17"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Content creators and builders: let's grow together. What do you post about? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-18"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Introduce yourself in three words, then say hi to the person above you. #connect
+"""
+
+[[post]]
+id = "x-connect2-19"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Let's connect if you care about SEO, AI search or getting found online. What are you working on? #connect #SEO
+"""
+
+[[post]]
+id = "x-connect2-20"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Building in public is better with company. Reply with your project and how long you've been at it. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-21"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Who's learning to code, build or sell online right now? Let's connect and learn together. #connect
+"""
+
+[[post]]
+id = "x-connect2-22"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Founders from Europe, say hi. What are you building? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-23"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Founders from Asia and the Middle East, say hi. What are you building? #connect
+"""
+
+[[post]]
+id = "x-connect2-24"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Founders from Africa and Latin America, let's connect. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect2-25"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Tag one builder more people should know about, and introduce yourself too. #connect
+"""
+
+[[post]]
+id = "x-connect2-26"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+What's your one-sentence bio? Let's connect with people who do similar work. #connect
+"""
+
+[[post]]
+id = "x-connect2-27"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Freelancers, agency owners and consultants, let's connect. What service do you offer? #connect
+"""
+
+[[post]]
+id = "x-connect2-28"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Ecommerce and Shopify builders, let's connect. What do you sell? #connect #ecommerce
+"""
+
+[[post]]
+id = "x-connect2-29"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Building something with no-code or AI tools? Show me, and let's connect. #connect #nocode
+"""
+
+[[post]]
+id = "x-connect2-30"
+draft = true  # held for your review
+platforms = ["x"]
+text = """
+Looking to connect with people who post every day. What's your niche? #connect #buildinpublic
+"""
