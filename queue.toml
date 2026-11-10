@@ -1785,6 +1785,22 @@ What are you building right now, and who is it for? Let's connect. #connect #bui
 """
 
 [[post]]
+id = "launchorbit-intro"
+draft = true
+image = "images/launchorbit-canvas.png"
+alt = "LaunchOrbit: Launch your product to orbit. Free product launches for founders and makers, next to a canvas of product logos."
+text = """
+I built LaunchOrbit, a free launch board for founders and makers.
+
+You launch your product, it gets a permanent page and a tile on a shared canvas, and community upvotes move it toward the center.
+
+What would you launch first?
+"""
+link = "https://launchorbit.co"
+x_include_link = true
+
+
+[[post]]
 id = "tryseo-daily"
 draft = true
 card = "A new article on your site, *every day.*"
@@ -1815,6 +1831,20 @@ Indie builders, introduce yourself in one line: your name, your product, your go
 """
 
 [[post]]
+id = "launchorbit-free"
+draft = true
+text = """
+Launching a side project shouldn't cost anything.
+
+A free launch on LaunchOrbit gets a permanent product page that never expires. Pick your launch week and go.
+
+What are you launching next?
+"""
+link = "https://launchorbit.co"
+x_include_link = true
+
+
+[[post]]
 id = "tryseo-ai-check"
 draft = true
 card = "Which AI assistants *recommend you?*"
@@ -1836,11 +1866,37 @@ Solo founders, what's working for getting your first users? Let's connect and sw
 """
 
 [[post]]
+id = "launchorbit-weekly"
+draft = true
+text = """
+Each launch week on LaunchOrbit runs Monday to Sunday (UTC), and the weekly board ranks products by community upvotes.
+
+Got something ready to launch?
+"""
+link = "https://launchorbit.co"
+x_include_link = true
+
+
+[[post]]
 id = "share3-05"
 draft = true
 text = """
 Let's connect if you're building a SaaS, an app or a tool for other builders. What does it do? #connect #buildinpublic
 """
+
+[[post]]
+id = "launchorbit-reviewed"
+draft = true
+image = "images/launchorbit-canvas.png"
+alt = "LaunchOrbit: Launch your product to orbit. Free product launches for founders and makers, next to a canvas of product logos."
+text = """
+I review every product on LaunchOrbit before it goes live, so the canvas stays full of real products made by real people.
+
+Built something? Launch it and get your spot on the orbit.
+"""
+link = "https://launchorbit.co"
+x_include_link = true
+
 
 [[post]]
 id = "tryseo-languages"
@@ -1864,6 +1920,18 @@ draft = true
 text = """
 Developers who also do their own marketing, say hi. What's one thing that brought you users? #connect #indiehackers
 """
+
+[[post]]
+id = "launchorbit-upvote"
+draft = true
+text = """
+To publish a free launch on LaunchOrbit, you upvote five other tools first. You find a few new makers before you launch.
+
+What's the last tool you found that you still use?
+"""
+link = "https://launchorbit.co"
+x_include_link = true
+
 
 [[post]]
 id = "x-connect3-01"
@@ -2171,4 +2239,20 @@ draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're working on SEO, content or getting found on Google. What's your site about? #connect #SEO
+"""
+
+[[post]]
+id = "x-connect3-36"
+draft = true
+platforms = ["x"]
+text = """
+Launching something soon? Tell me what it is and when it goes live. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-37"
+draft = true
+platforms = ["x"]
+text = """
+Where do you launch your products? Share your favorite launch sites, and let's connect. #connect #indiehackers
 """
