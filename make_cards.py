@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent
 W, H = 1200, 675
 PAD = 96
 BG, INK, MUTED, ACCENT = "#101322", "#F5F6FA", "#9AA0BC", "#8B6CFF"
-HANDLE = "@tashkann"
+HANDLE = "@tskndev"
 FONT = "/System/Library/Fonts/SFNS.ttf"
 
 

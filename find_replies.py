@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / "replies"
 SEEN_FILE = OUT_DIR / "seen.json"
 TOOL = "tikhub.x.twitter-web-fetch-search-timeline"
-ME = "tashkann"
+ME = "tskndev"
 
 # (keyword, search type). Plain words and hashtags only: X search operators
 # like lang: or since: don't survive this tool, so filtering happens below.

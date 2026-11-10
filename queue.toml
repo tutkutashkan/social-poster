@@ -1772,3 +1772,403 @@ platforms = ["x"]
 text = """
 Looking to connect with people who post every day. What's your niche? #connect #buildinpublic
 """
+
+# ---------------------------------------------------------------------------
+# Posts for X and Bluesky (main runs), then more X-only #connect posts.
+# ---------------------------------------------------------------------------
+
+[[post]]
+id = "share3-01"
+draft = true
+text = """
+What are you building right now, and who is it for? Let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "tryseo-daily"
+draft = true
+card = "A new article on your site, *every day.*"
+card_style = "tryseo"
+image = "images/tryseo-daily.png"
+alt = "TrySEO card: A new article on your site, every day."
+text = """
+Writing one blog post a week is hard. Writing one a day is a full-time job.
+
+TrySEO researches, writes and publishes about one article a day to your site, in your brand voice. Setup takes about five minutes.
+
+How often do you publish right now?
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "share3-02"
+draft = true
+text = """
+Building with AI tools this week? Tell me what you made, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "share3-03"
+draft = true
+text = """
+Indie builders, introduce yourself in one line: your name, your product, your goal for this month. #connect #buildinpublic
+"""
+
+[[post]]
+id = "tryseo-ai-check"
+draft = true
+card = "Which AI assistants *recommend you?*"
+card_style = "tryseo"
+image = "images/tryseo-ai-check.png"
+alt = "TrySEO card: Which AI assistants recommend you?"
+text = """
+Every week TrySEO asks ChatGPT, Claude, Gemini, Perplexity, Copilot and Google AI Overviews the questions your customers ask, and shows you who they name.
+
+Have you ever asked an AI assistant to recommend something in your niche?
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "share3-04"
+draft = true
+text = """
+Solo founders, what's working for getting your first users? Let's connect and swap notes. #connect #indiehackers
+"""
+
+[[post]]
+id = "share3-05"
+draft = true
+text = """
+Let's connect if you're building a SaaS, an app or a tool for other builders. What does it do? #connect #buildinpublic
+"""
+
+[[post]]
+id = "tryseo-languages"
+draft = true
+card = "SEO articles in *50+ languages.*"
+card_style = "tryseo"
+image = "images/tryseo-languages.png"
+alt = "TrySEO card: SEO articles in 50+ languages."
+text = """
+Selling outside your home country?
+
+TrySEO writes and publishes SEO articles in more than 50 languages, so customers can find you in the language they search in.
+
+Which language is your next market?
+"""
+link = "https://tryseo.org"
+
+[[post]]
+id = "share3-06"
+draft = true
+text = """
+Developers who also do their own marketing, say hi. What's one thing that brought you users? #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-01"
+draft = true
+platforms = ["x"]
+text = """
+Building a SaaS on nights and weekends? Say hi and tell me what it does in one line. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-02"
+draft = true
+platforms = ["x"]
+text = """
+Looking for builders to grow with this month:
+
+→ SaaS founders
+→ App developers
+→ Vibe coders
+→ Marketers who ship
+
+Say hi and share your project 👋 #connect
+"""
+
+[[post]]
+id = "x-connect3-03"
+draft = true
+platforms = ["x"]
+text = """
+Developers learning marketing, let's connect. What's the hardest part of getting users for you? #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-04"
+draft = true
+platforms = ["x"]
+text = """
+If you're building a mobile app, let's connect. iOS, Android or both? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-05"
+draft = true
+platforms = ["x"]
+text = """
+Founders from North America, say hi. What are you building? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-06"
+draft = true
+platforms = ["x"]
+text = """
+Pitch your product in five words. Let's connect. #connect #SaaS
+"""
+
+[[post]]
+id = "x-connect3-07"
+draft = true
+platforms = ["x"]
+text = """
+Coding after midnight again? Same. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-08"
+draft = true
+platforms = ["x"]
+text = """
+Solo devs doing design, code and support all at once, say hi 👋 What are you building? #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-09"
+draft = true
+platforms = ["x"]
+text = """
+Who's working on their first product? Tell me the idea, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-10"
+draft = true
+platforms = ["x"]
+text = """
+Founders from India and South Asia, let's connect. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-11"
+draft = true
+platforms = ["x"]
+text = """
+Builders using Claude, Cursor or Lovable, say hi. What did you build with it? #connect #vibecoding
+"""
+
+[[post]]
+id = "x-connect3-12"
+draft = true
+platforms = ["x"]
+text = """
+I want to meet more people building:
+
+→ SaaS
+→ Mobile apps
+→ AI tools
+→ Developer tools
+
+Say hi and tell me what yours does 👋 #connect
+"""
+
+[[post]]
+id = "x-connect3-13"
+draft = true
+platforms = ["x"]
+text = """
+Developers with a 9 to 5 and a side project, let's connect. What's the side project? #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-14"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're building something for small businesses. Who's your customer? #connect #SaaS
+"""
+
+[[post]]
+id = "x-connect3-15"
+draft = true
+platforms = ["x"]
+text = """
+Show me the product you're proudest of. A link or a screenshot. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-16"
+draft = true
+platforms = ["x"]
+text = """
+Builders from the Middle East and the Mediterranean, say hi. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-17"
+draft = true
+platforms = ["x"]
+text = """
+Students who build, let's connect. What are you making outside class? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-18"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're building with AI agents. What does yours do? #connect #AI
+"""
+
+[[post]]
+id = "x-connect3-19"
+draft = true
+platforms = ["x"]
+text = """
+Making money from your app yet, or still building? Either way, say hi. #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-20"
+draft = true
+platforms = ["x"]
+text = """
+Game developers, let's connect. What are you making, and where can I wishlist it? #connect #gamedev
+"""
+
+[[post]]
+id = "x-connect3-21"
+draft = true
+platforms = ["x"]
+text = """
+Founders from Europe and the UK, let's connect. What are you shipping this month? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-22"
+draft = true
+platforms = ["x"]
+text = """
+Who's building in a niche nobody talks about? I want to hear about it. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-23"
+draft = true
+platforms = ["x"]
+text = """
+Small accounts, this one's for you.
+
+If you're under 1,000 followers and building something:
+
+→ say hi
+→ share your project
+→ meet the people below you
+
+#connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-24"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're building a Chrome extension, a plugin or a small tool. What does it do? #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-25"
+draft = true
+platforms = ["x"]
+text = """
+Just launched something? Share the launch, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-26"
+draft = true
+platforms = ["x"]
+text = """
+Designers who code and coders who design, say hi 👋 What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-27"
+draft = true
+platforms = ["x"]
+text = """
+Who here is building a B2B tool? What problem does it solve? #connect #SaaS
+"""
+
+[[post]]
+id = "x-connect3-28"
+draft = true
+platforms = ["x"]
+text = """
+New to building in public? Introduce yourself here and meet a few people. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-29"
+draft = true
+platforms = ["x"]
+text = """
+Fintech, health and education builders, let's connect. What are you working on? #connect #startups
+"""
+
+[[post]]
+id = "x-connect3-30"
+draft = true
+platforms = ["x"]
+text = """
+What's the one task you're shipping today? Let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-31"
+draft = true
+platforms = ["x"]
+text = """
+Founders from Africa, let's connect. What are you building? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-32"
+draft = true
+platforms = ["x"]
+text = """
+Building something people pay for? Say hi with your product and one thing you learned this month. #connect #indiehackers
+"""
+
+[[post]]
+id = "x-connect3-33"
+draft = true
+platforms = ["x"]
+text = """
+Developers building in public:
+
+→ What are you building?
+→ Who is it for?
+→ What's next?
+
+Reply with all three and let's connect. #connect
+"""
+
+[[post]]
+id = "x-connect3-34"
+draft = true
+platforms = ["x"]
+text = """
+Founders from Latin America, say hi. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "x-connect3-35"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're working on SEO, content or getting found on Google. What's your site about? #connect #SEO
+"""
