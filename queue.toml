@@ -1784,6 +1784,19 @@ What are you building right now, and who is it for? Let's connect. #connect #bui
 """
 
 [[post]]
+id = "launchorbit-blog-how-to-launch-a-startup-product"
+draft = true
+text = """
+Launch day is the smallest part of a launch.
+
+Most of the work happens before it, talking to people who have the problem, and after it, following up with everyone who showed interest.
+
+The full guide on the LaunchOrbit blog:
+"""
+link = "https://launchorbit.co/blog/how-to-launch-a-startup-product"
+x_include_link = true
+
+[[post]]
 id = "launchorbit-intro"
 image = "images/launchorbit-canvas.png"
 alt = "LaunchOrbit: Launch your product to orbit. Free product launches for founders and makers, next to a canvas of product logos."
@@ -1814,16 +1827,55 @@ How often do you publish right now?
 link = "https://tryseo.org"
 
 [[post]]
+id = "launchorbit-blog-launching-when-nobody-knows-you"
+draft = true
+text = """
+No audience yet? You can still launch.
+
+Start with one sentence: "We help [specific person] do [specific job] without [common frustration]." If it's vague, more reach won't fix it.
+
+How to launch when nobody knows you yet:
+"""
+link = "https://launchorbit.co/blog/launching-when-nobody-knows-you"
+x_include_link = true
+
+[[post]]
 id = "share3-02"
 text = """
 Building with AI tools this week? Tell me what you made, and let's connect. #connect #buildinpublic
 """
 
 [[post]]
+id = "launchorbit-blog-first-10-users"
+draft = true
+text = """
+Your first 10 users usually don't come from a funnel. They come from conversations.
+
+Search for people describing the problem, not your product category. The words they use make your best landing page copy.
+
+How to find your first 10 users:
+"""
+link = "https://launchorbit.co/blog/first-10-users"
+x_include_link = true
+
+[[post]]
 id = "share3-03"
 text = """
 Indie builders, introduce yourself in one line: your name, your product, your goal for this month. #connect #buildinpublic
 """
+
+[[post]]
+id = "launchorbit-blog-product-tagline-examples"
+draft = true
+text = """
+A launch tagline has one job: say what the product is, who it's for and what they get, in one plain line.
+
+The test: can a stranger say what you do after reading it once?
+
+Tagline examples and four simple formulas:
+"""
+link = "https://launchorbit.co/blog/product-tagline-examples"
+x_include_link = true
 
 [[post]]
 id = "launchorbit-free"
@@ -1852,10 +1904,40 @@ Have you ever asked an AI assistant to recommend something in your niche?
 link = "https://tryseo.org"
 
 [[post]]
+id = "launchorbit-blog-build-a-waitlist-before-launch"
+draft = true
+text = """
+30 people who open your launch email beat 3,000 who forgot they signed up.
+
+With no audience, treat your waitlist as a list of conversations, not a number to grow.
+
+How to build a waitlist from zero:
+"""
+link = "https://launchorbit.co/blog/build-a-waitlist-before-launch"
+x_include_link = true
+
+[[post]]
 id = "share3-04"
 text = """
 Solo founders, what's working for getting your first users? Let's connect and swap notes. #connect #indiehackers
 """
+
+[[post]]
+id = "launchorbit-blog-product-launch-checklist"
+draft = true
+text = """
+If you only do five things for a launch:
+
+1. Test the whole signup path
+2. Write your launch copy in advance
+3. Line up people to tell
+4. Answer every comment on the day
+5. Review your numbers within a week
+
+The full checklist:
+"""
+link = "https://launchorbit.co/blog/product-launch-checklist"
+x_include_link = true
 
 [[post]]
 id = "launchorbit-weekly"
@@ -1873,6 +1955,19 @@ id = "share3-05"
 text = """
 Let's connect if you're building a SaaS, an app or a tool for other builders. What does it do? #connect #buildinpublic
 """
+
+[[post]]
+id = "launchorbit-blog-product-launch-page-screenshots"
+draft = true
+text = """
+Your first launch screenshot should show the result your product gives people.
+
+Five to seven visuals is enough: that result, two or three workflow shots, a short demo, and a logo that's still readable when small.
+
+What to prepare:
+"""
+link = "https://launchorbit.co/blog/product-launch-page-screenshots"
+x_include_link = true
 
 [[post]]
 id = "launchorbit-reviewed"
@@ -1903,10 +1998,38 @@ Which language is your next market?
 link = "https://tryseo.org"
 
 [[post]]
+id = "launchorbit-blog-product-feedback"
+draft = true
+text = """
+"Add exports" is a request. "I send this to a client every Friday" is context.
+
+When someone asks for a feature, ask what they were trying to do. The context often points to a simpler fix.
+
+Turning feedback into better decisions:
+"""
+link = "https://launchorbit.co/blog/product-feedback"
+x_include_link = true
+
+[[post]]
 id = "share3-06"
 text = """
 Developers who also do their own marketing, say hi. What's one thing that brought you users? #connect #indiehackers
 """
+
+[[post]]
+id = "launchorbit-blog-write-a-clear-product-description"
+draft = true
+text = """
+A product description template that works:
+
+[Product] helps [specific audience] do [outcome] by [how it works].
+
+Lead with the outcome. Explain the tech after.
+
+How to write one people understand:
+"""
+link = "https://launchorbit.co/blog/write-a-clear-product-description"
+x_include_link = true
 
 [[post]]
 id = "launchorbit-upvote"
@@ -1918,6 +2041,19 @@ What's the last tool you found that you still use?
 link = "https://launchorbit.co"
 x_include_link = true
 
+
+[[post]]
+id = "launchorbit-blog-product-launch-sites"
+draft = true
+text = """
+Submitting to every launch directory is rarely worth the time.
+
+One clear listing on a site your audience actually uses beats a thin profile copied across dozens.
+
+How to choose where to launch:
+"""
+link = "https://launchorbit.co/blog/product-launch-sites"
+x_include_link = true
 
 [[post]]
 id = "x-connect3-01"
