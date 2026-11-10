@@ -1779,14 +1779,12 @@ Looking to connect with people who post every day. What's your niche? #connect #
 
 [[post]]
 id = "share3-01"
-draft = true
 text = """
 What are you building right now, and who is it for? Let's connect. #connect #buildinpublic
 """
 
 [[post]]
 id = "launchorbit-intro"
-draft = true
 image = "images/launchorbit-canvas.png"
 alt = "LaunchOrbit: Launch your product to orbit. Free product launches for founders and makers, next to a canvas of product logos."
 text = """
@@ -1802,7 +1800,6 @@ x_include_link = true
 
 [[post]]
 id = "tryseo-daily"
-draft = true
 card = "A new article on your site, *every day.*"
 card_style = "tryseo"
 image = "images/tryseo-daily.png"
@@ -1818,21 +1815,18 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "share3-02"
-draft = true
 text = """
 Building with AI tools this week? Tell me what you made, and let's connect. #connect #buildinpublic
 """
 
 [[post]]
 id = "share3-03"
-draft = true
 text = """
 Indie builders, introduce yourself in one line: your name, your product, your goal for this month. #connect #buildinpublic
 """
 
 [[post]]
 id = "launchorbit-free"
-draft = true
 text = """
 Launching a side project shouldn't cost anything.
 
@@ -1846,7 +1840,6 @@ x_include_link = true
 
 [[post]]
 id = "tryseo-ai-check"
-draft = true
 card = "Which AI assistants *recommend you?*"
 card_style = "tryseo"
 image = "images/tryseo-ai-check.png"
@@ -1860,14 +1853,12 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "share3-04"
-draft = true
 text = """
 Solo founders, what's working for getting your first users? Let's connect and swap notes. #connect #indiehackers
 """
 
 [[post]]
 id = "launchorbit-weekly"
-draft = true
 text = """
 Each launch week on LaunchOrbit runs Monday to Sunday (UTC), and the weekly board ranks products by community upvotes.
 
@@ -1879,14 +1870,12 @@ x_include_link = true
 
 [[post]]
 id = "share3-05"
-draft = true
 text = """
 Let's connect if you're building a SaaS, an app or a tool for other builders. What does it do? #connect #buildinpublic
 """
 
 [[post]]
 id = "launchorbit-reviewed"
-draft = true
 image = "images/launchorbit-canvas.png"
 alt = "LaunchOrbit: Launch your product to orbit. Free product launches for founders and makers, next to a canvas of product logos."
 text = """
@@ -1900,7 +1889,6 @@ x_include_link = true
 
 [[post]]
 id = "tryseo-languages"
-draft = true
 card = "SEO articles in *50+ languages.*"
 card_style = "tryseo"
 image = "images/tryseo-languages.png"
@@ -1916,14 +1904,12 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "share3-06"
-draft = true
 text = """
 Developers who also do their own marketing, say hi. What's one thing that brought you users? #connect #indiehackers
 """
 
 [[post]]
 id = "launchorbit-upvote"
-draft = true
 text = """
 To publish a free launch on LaunchOrbit, you upvote five other tools first. You find a few new makers before you launch.
 
@@ -1935,7 +1921,6 @@ x_include_link = true
 
 [[post]]
 id = "x-connect3-01"
-draft = true
 platforms = ["x"]
 text = """
 Building a SaaS on nights and weekends? Say hi and tell me what it does in one line. #connect #buildinpublic
@@ -1943,7 +1928,6 @@ Building a SaaS on nights and weekends? Say hi and tell me what it does in one l
 
 [[post]]
 id = "x-connect3-02"
-draft = true
 platforms = ["x"]
 text = """
 Looking for builders to grow with this month:
@@ -1958,7 +1942,6 @@ Say hi and share your project 👋 #connect
 
 [[post]]
 id = "x-connect3-03"
-draft = true
 platforms = ["x"]
 text = """
 Developers learning marketing, let's connect. What's the hardest part of getting users for you? #connect #indiehackers
@@ -1966,7 +1949,6 @@ Developers learning marketing, let's connect. What's the hardest part of getting
 
 [[post]]
 id = "x-connect3-04"
-draft = true
 platforms = ["x"]
 text = """
 If you're building a mobile app, let's connect. iOS, Android or both? #connect #buildinpublic
@@ -1974,7 +1956,6 @@ If you're building a mobile app, let's connect. iOS, Android or both? #connect #
 
 [[post]]
 id = "x-connect3-05"
-draft = true
 platforms = ["x"]
 text = """
 Founders from North America, say hi. What are you building? #connect #buildinpublic
@@ -1982,7 +1963,6 @@ Founders from North America, say hi. What are you building? #connect #buildinpub
 
 [[post]]
 id = "x-connect3-06"
-draft = true
 platforms = ["x"]
 text = """
 Pitch your product in five words. Let's connect. #connect #SaaS
@@ -1990,7 +1970,6 @@ Pitch your product in five words. Let's connect. #connect #SaaS
 
 [[post]]
 id = "x-connect3-07"
-draft = true
 platforms = ["x"]
 text = """
 Coding after midnight again? Same. What are you working on? #connect #buildinpublic
@@ -1998,7 +1977,6 @@ Coding after midnight again? Same. What are you working on? #connect #buildinpub
 
 [[post]]
 id = "x-connect3-08"
-draft = true
 platforms = ["x"]
 text = """
 Solo devs doing design, code and support all at once, say hi 👋 What are you building? #connect #indiehackers
@@ -2006,7 +1984,6 @@ Solo devs doing design, code and support all at once, say hi 👋 What are you b
 
 [[post]]
 id = "x-connect3-09"
-draft = true
 platforms = ["x"]
 text = """
 Who's working on their first product? Tell me the idea, and let's connect. #connect #buildinpublic
@@ -2014,7 +1991,6 @@ Who's working on their first product? Tell me the idea, and let's connect. #conn
 
 [[post]]
 id = "x-connect3-10"
-draft = true
 platforms = ["x"]
 text = """
 Founders from India and South Asia, let's connect. What are you working on? #connect #buildinpublic
@@ -2022,7 +1998,6 @@ Founders from India and South Asia, let's connect. What are you working on? #con
 
 [[post]]
 id = "x-connect3-11"
-draft = true
 platforms = ["x"]
 text = """
 Builders using Claude, Cursor or Lovable, say hi. What did you build with it? #connect #vibecoding
@@ -2030,7 +2005,6 @@ Builders using Claude, Cursor or Lovable, say hi. What did you build with it? #c
 
 [[post]]
 id = "x-connect3-12"
-draft = true
 platforms = ["x"]
 text = """
 I want to meet more people building:
@@ -2045,7 +2019,6 @@ Say hi and tell me what yours does 👋 #connect
 
 [[post]]
 id = "x-connect3-13"
-draft = true
 platforms = ["x"]
 text = """
 Developers with a 9 to 5 and a side project, let's connect. What's the side project? #connect #indiehackers
@@ -2053,7 +2026,6 @@ Developers with a 9 to 5 and a side project, let's connect. What's the side proj
 
 [[post]]
 id = "x-connect3-14"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're building something for small businesses. Who's your customer? #connect #SaaS
@@ -2061,7 +2033,6 @@ Let's connect if you're building something for small businesses. Who's your cust
 
 [[post]]
 id = "x-connect3-15"
-draft = true
 platforms = ["x"]
 text = """
 Show me the product you're proudest of. A link or a screenshot. #connect #buildinpublic
@@ -2069,7 +2040,6 @@ Show me the product you're proudest of. A link or a screenshot. #connect #buildi
 
 [[post]]
 id = "x-connect3-16"
-draft = true
 platforms = ["x"]
 text = """
 Builders from the Middle East and the Mediterranean, say hi. What are you working on? #connect #buildinpublic
@@ -2077,7 +2047,6 @@ Builders from the Middle East and the Mediterranean, say hi. What are you workin
 
 [[post]]
 id = "x-connect3-17"
-draft = true
 platforms = ["x"]
 text = """
 Students who build, let's connect. What are you making outside class? #connect #buildinpublic
@@ -2085,7 +2054,6 @@ Students who build, let's connect. What are you making outside class? #connect #
 
 [[post]]
 id = "x-connect3-18"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're building with AI agents. What does yours do? #connect #AI
@@ -2093,7 +2061,6 @@ Let's connect if you're building with AI agents. What does yours do? #connect #A
 
 [[post]]
 id = "x-connect3-19"
-draft = true
 platforms = ["x"]
 text = """
 Making money from your app yet, or still building? Either way, say hi. #connect #indiehackers
@@ -2101,7 +2068,6 @@ Making money from your app yet, or still building? Either way, say hi. #connect 
 
 [[post]]
 id = "x-connect3-20"
-draft = true
 platforms = ["x"]
 text = """
 Game developers, let's connect. What are you making, and where can I wishlist it? #connect #gamedev
@@ -2109,7 +2075,6 @@ Game developers, let's connect. What are you making, and where can I wishlist it
 
 [[post]]
 id = "x-connect3-21"
-draft = true
 platforms = ["x"]
 text = """
 Founders from Europe and the UK, let's connect. What are you shipping this month? #connect #buildinpublic
@@ -2117,7 +2082,6 @@ Founders from Europe and the UK, let's connect. What are you shipping this month
 
 [[post]]
 id = "x-connect3-22"
-draft = true
 platforms = ["x"]
 text = """
 Who's building in a niche nobody talks about? I want to hear about it. #connect #buildinpublic
@@ -2125,7 +2089,6 @@ Who's building in a niche nobody talks about? I want to hear about it. #connect 
 
 [[post]]
 id = "x-connect3-23"
-draft = true
 platforms = ["x"]
 text = """
 Small accounts, this one's for you.
@@ -2141,7 +2104,6 @@ If you're under 1,000 followers and building something:
 
 [[post]]
 id = "x-connect3-24"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're building a Chrome extension, a plugin or a small tool. What does it do? #connect #indiehackers
@@ -2149,7 +2111,6 @@ Let's connect if you're building a Chrome extension, a plugin or a small tool. W
 
 [[post]]
 id = "x-connect3-25"
-draft = true
 platforms = ["x"]
 text = """
 Just launched something? Share the launch, and let's connect. #connect #buildinpublic
@@ -2157,7 +2118,6 @@ Just launched something? Share the launch, and let's connect. #connect #buildinp
 
 [[post]]
 id = "x-connect3-26"
-draft = true
 platforms = ["x"]
 text = """
 Designers who code and coders who design, say hi 👋 What are you working on? #connect #buildinpublic
@@ -2165,7 +2125,6 @@ Designers who code and coders who design, say hi 👋 What are you working on? #
 
 [[post]]
 id = "x-connect3-27"
-draft = true
 platforms = ["x"]
 text = """
 Who here is building a B2B tool? What problem does it solve? #connect #SaaS
@@ -2173,7 +2132,6 @@ Who here is building a B2B tool? What problem does it solve? #connect #SaaS
 
 [[post]]
 id = "x-connect3-28"
-draft = true
 platforms = ["x"]
 text = """
 New to building in public? Introduce yourself here and meet a few people. #connect #buildinpublic
@@ -2181,7 +2139,6 @@ New to building in public? Introduce yourself here and meet a few people. #conne
 
 [[post]]
 id = "x-connect3-29"
-draft = true
 platforms = ["x"]
 text = """
 Fintech, health and education builders, let's connect. What are you working on? #connect #startups
@@ -2189,7 +2146,6 @@ Fintech, health and education builders, let's connect. What are you working on? 
 
 [[post]]
 id = "x-connect3-30"
-draft = true
 platforms = ["x"]
 text = """
 What's the one task you're shipping today? Let's connect. #connect #buildinpublic
@@ -2197,7 +2153,6 @@ What's the one task you're shipping today? Let's connect. #connect #buildinpubli
 
 [[post]]
 id = "x-connect3-31"
-draft = true
 platforms = ["x"]
 text = """
 Founders from Africa, let's connect. What are you building? #connect #buildinpublic
@@ -2205,7 +2160,6 @@ Founders from Africa, let's connect. What are you building? #connect #buildinpub
 
 [[post]]
 id = "x-connect3-32"
-draft = true
 platforms = ["x"]
 text = """
 Building something people pay for? Say hi with your product and one thing you learned this month. #connect #indiehackers
@@ -2213,7 +2167,6 @@ Building something people pay for? Say hi with your product and one thing you le
 
 [[post]]
 id = "x-connect3-33"
-draft = true
 platforms = ["x"]
 text = """
 Developers building in public:
@@ -2227,7 +2180,6 @@ Reply with all three and let's connect. #connect
 
 [[post]]
 id = "x-connect3-34"
-draft = true
 platforms = ["x"]
 text = """
 Founders from Latin America, say hi. What are you working on? #connect #buildinpublic
@@ -2235,7 +2187,6 @@ Founders from Latin America, say hi. What are you working on? #connect #buildinp
 
 [[post]]
 id = "x-connect3-35"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're working on SEO, content or getting found on Google. What's your site about? #connect #SEO
@@ -2243,7 +2194,6 @@ Let's connect if you're working on SEO, content or getting found on Google. What
 
 [[post]]
 id = "x-connect3-36"
-draft = true
 platforms = ["x"]
 text = """
 Launching something soon? Tell me what it is and when it goes live. #connect #buildinpublic
@@ -2251,7 +2201,6 @@ Launching something soon? Tell me what it is and when it goes live. #connect #bu
 
 [[post]]
 id = "x-connect3-37"
-draft = true
 platforms = ["x"]
 text = """
 Where do you launch your products? Share your favorite launch sites, and let's connect. #connect #indiehackers
