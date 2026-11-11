@@ -1722,5 +1722,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-08T11:17:12Z"
     }
+  },
+  "share3-01": {
+    "x": {
+      "id": "2120430642705899761",
+      "url": "https://x.com/i/web/status/2120430642705899761",
+      "cost_usd": 0.015,
+      "posted_at": "2026-11-11T08:17:15Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3mzzjderdb52k",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3mzzjderdb52k",
+      "posted_at": "2026-11-11T08:17:16Z"
+    }
   }
 }
