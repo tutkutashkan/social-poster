@@ -2002,5 +2002,13 @@
       "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n2c7m6vcgb27",
       "posted_at": "2026-11-14T19:17:12Z"
     }
+  },
+  "x-connect3-23": {
+    "x": {
+      "id": "2121714083905065181",
+      "url": "https://x.com/i/web/status/2121714083905065181",
+      "cost_usd": 0.015,
+      "posted_at": "2026-11-14T21:17:11Z"
+    }
   }
 }
