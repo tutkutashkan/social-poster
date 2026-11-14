@@ -1944,5 +1944,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-13T22:47:12Z"
     }
+  },
+  "tryseo-ai-check": {
+    "x": {
+      "id": "2121517795934458275",
+      "url": "https://x.com/i/web/status/2121517795934458275",
+      "cost_usd": 0.015,
+      "posted_at": "2026-11-14T08:17:13Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n2b2q3ilxb2h",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n2b2q3ilxb2h",
+      "posted_at": "2026-11-14T08:17:15Z"
+    }
   }
 }
