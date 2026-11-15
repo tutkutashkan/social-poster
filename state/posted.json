@@ -2018,5 +2018,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-14T22:47:15Z"
     }
+  },
+  "launchorbit-weekly": {
+    "x": {
+      "id": "2121880208760312107",
+      "url": "https://x.com/i/web/status/2121880208760312107",
+      "cost_usd": 0.2,
+      "posted_at": "2026-11-15T08:17:19Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n2dl7ivu5s2v",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n2dl7ivu5s2v",
+      "posted_at": "2026-11-15T08:17:31Z"
+    }
   }
 }
