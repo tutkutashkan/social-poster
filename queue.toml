@@ -2513,7 +2513,6 @@ x_include_link = true
 [[post]]
 id = "reach-01"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 The hardest part of building a SaaS is ____.
@@ -2522,7 +2521,6 @@ The hardest part of building a SaaS is ____.
 [[post]]
 id = "reach-02"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Supabase or Firebase for your next project? Pick one and tell me why.
@@ -2531,7 +2529,6 @@ Supabase or Firebase for your next project? Pick one and tell me why.
 [[post]]
 id = "reach-03"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Unpopular opinion: most side projects don't need user accounts on day one. Let people try it first.
@@ -2540,7 +2537,6 @@ Unpopular opinion: most side projects don't need user accounts on day one. Let p
 [[post]]
 id = "reach-04"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Building the product: 2 weeks.
@@ -2550,7 +2546,6 @@ Writing the landing page copy: also 2 weeks.
 [[post]]
 id = "reach-05"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Things to check before you launch:
@@ -2566,7 +2561,6 @@ What's on your list?
 [[post]]
 id = "reach-06"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 What's a feature you removed that nobody missed?
@@ -2575,7 +2569,6 @@ What's a feature you removed that nobody missed?
 [[post]]
 id = "reach-07"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Cursor, Claude Code or Copilot? Which one do you actually use every day?
@@ -2584,7 +2577,6 @@ Cursor, Claude Code or Copilot? Which one do you actually use every day?
 [[post]]
 id = "reach-08"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Building is the easy part now. Getting the first 100 people to care is the real job.
@@ -2593,7 +2585,6 @@ Building is the easy part now. Getting the first 100 people to care is the real 
 [[post]]
 id = "reach-09"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Every indie hacker has a folder of domains for projects they never built. How many do you have?
@@ -2602,7 +2593,6 @@ Every indie hacker has a folder of domains for projects they never built. How ma
 [[post]]
 id = "reach-10"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Finish this sentence: "I'll launch when ____."
@@ -2611,7 +2601,6 @@ Finish this sentence: "I'll launch when ____."
 [[post]]
 id = "reach-11"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Free things that help a new product get found:
@@ -2628,7 +2617,6 @@ What would you add?
 [[post]]
 id = "reach-12"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Monthly or lifetime pricing for an indie SaaS? Which would you pick?
@@ -2637,7 +2625,6 @@ Monthly or lifetime pricing for an indie SaaS? Which would you pick?
 [[post]]
 id = "reach-13"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Your landing page doesn't need more features listed. It needs one sentence that says who it's for.
@@ -2646,7 +2633,6 @@ Your landing page doesn't need more features listed. It needs one sentence that 
 [[post]]
 id = "reach-14"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 You: spend a week on a clever feature.
@@ -2656,7 +2642,6 @@ Your users: "can it export to CSV?"
 [[post]]
 id = "reach-15"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 What's the most overrated tool in your stack?
@@ -2665,7 +2650,6 @@ What's the most overrated tool in your stack?
 [[post]]
 id = "reach-16"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Questions to ask your first users:
@@ -2680,7 +2664,6 @@ Save this for your next user call.
 [[post]]
 id = "reach-17"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Building alone or with a cofounder? If you started over, which would you pick?
@@ -2689,7 +2672,6 @@ Building alone or with a cofounder? If you started over, which would you pick?
 [[post]]
 id = "reach-18"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 AI made building faster. It didn't make marketing faster. That's where solo founders win or lose now.
@@ -2698,7 +2680,6 @@ AI made building faster. It didn't make marketing faster. That's where solo foun
 [[post]]
 id = "reach-19"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 The best money you ever spent on your product: ____
@@ -2707,7 +2688,6 @@ The best money you ever spent on your product: ____
 [[post]]
 id = "reach-20"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 How many products have you launched? Count the ones nobody saw too.
@@ -2716,7 +2696,6 @@ How many products have you launched? Count the ones nobody saw too.
 [[post]]
 id = "reach-21"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 A boring product that solves one real problem beats a clever product nobody needs.
@@ -2725,7 +2704,6 @@ A boring product that solves one real problem beats a clever product nobody need
 [[post]]
 id = "reach-22"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Next.js or plain HTML for a landing page? Be honest.
@@ -2734,7 +2712,6 @@ Next.js or plain HTML for a landing page? Be honest.
 [[post]]
 id = "reach-23"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Me: this bug will take 10 minutes.
@@ -2744,7 +2721,6 @@ Also me, 4 hours later: rewriting the whole auth flow.
 [[post]]
 id = "reach-24"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 The most useful feedback comes from people who stopped using your product. Ask them why.
@@ -2753,7 +2729,6 @@ The most useful feedback comes from people who stopped using your product. Ask t
 [[post]]
 id = "reach-25"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 If you had to start from zero followers today, what's the first thing you'd post?
@@ -2762,7 +2737,6 @@ If you had to start from zero followers today, what's the first thing you'd post
 [[post]]
 id = "reach-26"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Shipping something small every week beats planning a big launch for months.
@@ -2771,7 +2745,6 @@ Shipping something small every week beats planning a big launch for months.
 [[post]]
 id = "reach-27"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 What's one tool you'd pay for even if it doubled in price?
@@ -2780,7 +2753,6 @@ What's one tool you'd pay for even if it doubled in price?
 [[post]]
 id = "reach-28"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 SEO in 2026 isn't only Google. People ask ChatGPT and Claude what to buy. Have you checked what they say about your product?
@@ -2789,7 +2761,6 @@ SEO in 2026 isn't only Google. People ask ChatGPT and Claude what to buy. Have y
 [[post]]
 id = "reach-29"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 What made you start building things online?
@@ -2798,7 +2769,6 @@ What made you start building things online?
 [[post]]
 id = "reach-30"
 kind = "reach"
-draft = true
 platforms = ["x"]
 text = """
 Ship fast and fix later, or ship once and get it right? Pick one.
@@ -2807,7 +2777,6 @@ Ship fast and fix later, or ship once and get it right? Pick one.
 [[post]]
 id = "connect-01"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Looking for people to grow with this week:
@@ -2823,7 +2792,6 @@ Say hi and tell me what you're building 👋 #connect
 [[post]]
 id = "connect-02"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Developers who also handle sales and support, let's connect. What are you building? #connect #indiehackers
@@ -2832,7 +2800,6 @@ Developers who also handle sales and support, let's connect. What are you buildi
 [[post]]
 id = "connect-03"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Building a tool for other developers? Tell me what it does, and let's connect. #connect #buildinpublic
@@ -2841,7 +2808,6 @@ Building a tool for other developers? Tell me what it does, and let's connect. #
 [[post]]
 id = "connect-04"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Founders from Southeast Asia, say hi. What are you working on? #connect #buildinpublic
@@ -2850,7 +2816,6 @@ Founders from Southeast Asia, say hi. What are you working on? #connect #buildin
 [[post]]
 id = "connect-05"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're building with no team and no funding. What's your product? #connect #bootstrapped
@@ -2859,7 +2824,6 @@ Let's connect if you're building with no team and no funding. What's your produc
 [[post]]
 id = "connect-06"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 SaaS builders, drop your one-line pitch and meet the people below you. #connect #SaaS
@@ -2868,7 +2832,6 @@ SaaS builders, drop your one-line pitch and meet the people below you. #connect 
 [[post]]
 id = "connect-07"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Small accounts grow faster in groups. If you're under 2,000 followers and building something, say hi 👋 #connect #buildinpublic
@@ -2877,7 +2840,6 @@ Small accounts grow faster in groups. If you're under 2,000 followers and buildi
 [[post]]
 id = "connect-08"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Mobile app developers, let's connect. What's your app, and which store is it on? #connect #buildinpublic
@@ -2886,7 +2848,6 @@ Mobile app developers, let's connect. What's your app, and which store is it on?
 [[post]]
 id = "connect-09"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Who's building something with AI this month? Tell me what it does, and let's connect. #connect #AI
@@ -2895,7 +2856,6 @@ Who's building something with AI this month? Tell me what it does, and let's con
 [[post]]
 id = "connect-10"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Founders from the Middle East and Turkey, say hi. What are you building? #connect #buildinpublic
@@ -2904,7 +2864,6 @@ Founders from the Middle East and Turkey, say hi. What are you building? #connec
 [[post]]
 id = "connect-11"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 If you build after your day job, let's connect. What's your side project? #connect #indiehackers
@@ -2913,7 +2872,6 @@ If you build after your day job, let's connect. What's your side project? #conne
 [[post]]
 id = "connect-12"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Let's connect if you're into SEO, content or AI search. What are you working on? #connect #SEO
@@ -2922,7 +2880,6 @@ Let's connect if you're into SEO, content or AI search. What are you working on?
 [[post]]
 id = "connect-13"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Introduce yourself in one line: your name, your product, who it's for. Let's connect. #connect #buildinpublic
@@ -2931,7 +2888,6 @@ Introduce yourself in one line: your name, your product, who it's for. Let's con
 [[post]]
 id = "connect-14"
 kind = "connect"
-draft = true
 platforms = ["x"]
 text = """
 Vibe coders, let's see what you built. Share it below, and let's connect. #connect #vibecoding
