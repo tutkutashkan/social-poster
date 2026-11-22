@@ -2200,5 +2200,18 @@
       "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n2jqzmucuo2e",
       "posted_at": "2026-11-17T19:17:34Z"
     }
+  },
+  "launchorbit-blog-launching-when-nobody-knows-you": {
+    "x": {
+      "id": "2124583046275797483",
+      "url": "https://x.com/i/web/status/2124583046275797483",
+      "cost_usd": 0.2,
+      "posted_at": "2026-11-22T19:17:25Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n2wdehhdbi2v",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n2wdehhdbi2v",
+      "posted_at": "2026-11-22T19:17:43Z"
+    }
   }
 }
