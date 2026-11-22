@@ -1785,7 +1785,7 @@ What are you building right now, and who is it for? Let's connect. #connect #bui
 
 [[post]]
 id = "launchorbit-blog-how-to-launch-a-startup-product"
-draft = true
+kind = "article"
 text = """
 Launch day is the smallest part of a launch.
 
@@ -1828,7 +1828,7 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "launchorbit-blog-launching-when-nobody-knows-you"
-draft = true
+kind = "article"
 text = """
 No audience yet? You can still launch.
 
@@ -1847,7 +1847,7 @@ Building with AI tools this week? Tell me what you made, and let's connect. #con
 
 [[post]]
 id = "launchorbit-blog-first-10-users"
-draft = true
+kind = "article"
 text = """
 Your first 10 users usually don't come from a funnel. They come from conversations.
 
@@ -1866,7 +1866,7 @@ Indie builders, introduce yourself in one line: your name, your product, your go
 
 [[post]]
 id = "launchorbit-blog-product-tagline-examples"
-draft = true
+kind = "article"
 text = """
 A launch tagline has one job: say what the product is, who it's for and what they get, in one plain line.
 
@@ -1905,7 +1905,7 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "launchorbit-blog-build-a-waitlist-before-launch"
-draft = true
+kind = "article"
 text = """
 30 people who open your launch email beat 3,000 who forgot they signed up.
 
@@ -1924,7 +1924,7 @@ Solo founders, what's working for getting your first users? Let's connect and sw
 
 [[post]]
 id = "launchorbit-blog-product-launch-checklist"
-draft = true
+kind = "article"
 text = """
 If you only do five things for a launch:
 
@@ -1958,7 +1958,7 @@ Let's connect if you're building a SaaS, an app or a tool for other builders. Wh
 
 [[post]]
 id = "launchorbit-blog-product-launch-page-screenshots"
-draft = true
+kind = "article"
 text = """
 Your first launch screenshot should show the result your product gives people.
 
@@ -1999,7 +1999,7 @@ link = "https://tryseo.org"
 
 [[post]]
 id = "launchorbit-blog-product-feedback"
-draft = true
+kind = "article"
 text = """
 "Add exports" is a request. "I send this to a client every Friday" is context.
 
@@ -2018,7 +2018,7 @@ Developers who also do their own marketing, say hi. What's one thing that brough
 
 [[post]]
 id = "launchorbit-blog-write-a-clear-product-description"
-draft = true
+kind = "article"
 text = """
 A product description template that works:
 
@@ -2044,7 +2044,7 @@ x_include_link = true
 
 [[post]]
 id = "launchorbit-blog-product-launch-sites"
-draft = true
+kind = "article"
 text = """
 Submitting to every launch directory is rarely worth the time.
 
@@ -2340,4 +2340,599 @@ id = "x-connect3-37"
 platforms = ["x"]
 text = """
 Where do you launch your products? Share your favorite launch sites, and let's connect. #connect #indiehackers
+"""
+
+# ---------------------------------------------------------------------------
+# Blog articles. The hourly schedule finds articles in each blog's sitemap and
+# posts the oldest unposted one; a post here with id "<blog>-blog-<slug>" and
+# kind = "article" replaces the default title-and-description text.
+# ---------------------------------------------------------------------------
+
+[[post]]
+id = "launchorbit-blog-after-product-launch-what-to-do"
+kind = "article"
+text = """
+The week after launch matters more than launch day.
+
+Reply to everyone who reached out, test your signup on a phone, and write down what people told you. Don't start building new features yet.
+
+A first-week plan:
+"""
+link = "https://launchorbit.co/blog/after-product-launch-what-to-do"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-best-places-to-launch-a-startup"
+kind = "article"
+text = """
+You don't need 50 launch sites. You need three kinds:
+
+1. A launch platform with a permanent page
+2. One community where your buyers already hang out
+3. A few niche directories, added over the next weeks
+
+Where to launch for free:
+"""
+link = "https://launchorbit.co/blog/best-places-to-launch-a-startup"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-product-launch-platform-comparison"
+kind = "article"
+text = """
+Before you pick a launch platform, check four things:
+
+→ How long the ranking window is
+→ Who can vote
+→ Whether humans curate
+→ What your page does after launch day
+
+How launch platforms rank products:
+"""
+link = "https://launchorbit.co/blog/product-launch-platform-comparison"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-product-hunt-alternatives-indie-makers"
+kind = "article"
+text = """
+No big network? A one-day launch can feel like all or nothing.
+
+Most indie makers do better spreading it out: two or three launch boards, communities and directories over a few weeks.
+
+Product Hunt alternatives, by type:
+"""
+link = "https://launchorbit.co/blog/product-hunt-alternatives-indie-makers"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-are-startup-directories-worth-it"
+kind = "article"
+text = """
+Are startup directories worth it?
+
+A few that real people visit, yes. Dozens submitted just for backlinks, no. Expect modest traffic and a small SEO boost, not rankings.
+
+How to vet a directory in ten minutes:
+"""
+link = "https://launchorbit.co/blog/are-startup-directories-worth-it"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-how-to-submit-saas-to-directories"
+kind = "article"
+text = """
+Submitting your SaaS to directories doesn't have to take weeks.
+
+Write one listing kit, sort directories by the audience they reach, and submit in batches. 10 to 20 good listings beat hundreds of random ones.
+
+The process:
+"""
+link = "https://launchorbit.co/blog/how-to-submit-saas-to-directories"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-free-vs-paid-product-launch"
+kind = "article"
+text = """
+Paid launch slots buy visibility for a while. They don't buy users.
+
+Launch free first. Pay only once you've seen that people who find your product actually sign up.
+
+Free vs paid launches:
+"""
+link = "https://launchorbit.co/blog/free-vs-paid-product-launch"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-how-to-get-upvotes-on-product-launch"
+kind = "article"
+text = """
+The best way to get launch upvotes: make a product people can try in under a minute, and show it to people who already have a reason to care.
+
+No bots, no vote swaps, no begging.
+
+How to get upvotes the right way:
+"""
+link = "https://launchorbit.co/blog/how-to-get-upvotes-on-product-launch"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-how-to-ask-for-launch-support"
+kind = "article"
+text = """
+"Please support us!" is not an ask.
+
+Message people one by one, ask before launch day, make one specific request, and make it easy to say no.
+
+How to ask for launch support without being spammy:
+"""
+link = "https://launchorbit.co/blog/how-to-ask-for-launch-support"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-best-time-to-launch-a-product"
+kind = "article"
+text = """
+When should you launch?
+
+On a daily board, timing matters a lot. On a weekly or monthly board, it matters far less than getting steady upvotes across the whole period.
+
+Picking your launch day and hour:
+"""
+link = "https://launchorbit.co/blog/best-time-to-launch-a-product"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-launch-leaderboard-how-it-works"
+kind = "article"
+text = """
+A daily leaderboard is a sprint. A weekly one rewards a few days of steady interest. A monthly one rewards products people keep backing for weeks.
+
+Know the window before you launch:
+"""
+link = "https://launchorbit.co/blog/launch-leaderboard-how-it-works"
+x_include_link = true
+
+[[post]]
+id = "launchorbit-blog-fake-upvotes-product-launch"
+kind = "article"
+text = """
+Fake upvotes usually backfire. Platforms remove them, the visitors don't stick around, and your reputation takes the hit.
+
+What to do instead when you have no audience:
+"""
+link = "https://launchorbit.co/blog/fake-upvotes-product-launch"
+x_include_link = true
+
+# ---------------------------------------------------------------------------
+# Scheduled X posts: kind = "reach" for the reach slots, kind = "connect"
+# for the two #connect slots (see SLOTS in poster.py).
+# ---------------------------------------------------------------------------
+
+[[post]]
+id = "reach-01"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+The hardest part of building a SaaS is ____.
+"""
+
+[[post]]
+id = "reach-02"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Supabase or Firebase for your next project? Pick one and tell me why.
+"""
+
+[[post]]
+id = "reach-03"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Unpopular opinion: most side projects don't need user accounts on day one. Let people try it first.
+"""
+
+[[post]]
+id = "reach-04"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Building the product: 2 weeks.
+Writing the landing page copy: also 2 weeks.
+"""
+
+[[post]]
+id = "reach-05"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Things to check before you launch:
+
+→ Signup works on a phone
+→ Emails don't land in spam
+→ The page says who it's for in one line
+→ You can see where visitors come from
+
+What's on your list?
+"""
+
+[[post]]
+id = "reach-06"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+What's a feature you removed that nobody missed?
+"""
+
+[[post]]
+id = "reach-07"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Cursor, Claude Code or Copilot? Which one do you actually use every day?
+"""
+
+[[post]]
+id = "reach-08"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Building is the easy part now. Getting the first 100 people to care is the real job.
+"""
+
+[[post]]
+id = "reach-09"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Every indie hacker has a folder of domains for projects they never built. How many do you have?
+"""
+
+[[post]]
+id = "reach-10"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Finish this sentence: "I'll launch when ____."
+"""
+
+[[post]]
+id = "reach-11"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Free things that help a new product get found:
+
+→ A page title that says what it is
+→ A meta description that says who it's for
+→ A sitemap in Google Search Console
+→ An llms.txt file for AI assistants
+→ One listing on a launch site
+
+What would you add?
+"""
+
+[[post]]
+id = "reach-12"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Monthly or lifetime pricing for an indie SaaS? Which would you pick?
+"""
+
+[[post]]
+id = "reach-13"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Your landing page doesn't need more features listed. It needs one sentence that says who it's for.
+"""
+
+[[post]]
+id = "reach-14"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+You: spend a week on a clever feature.
+Your users: "can it export to CSV?"
+"""
+
+[[post]]
+id = "reach-15"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+What's the most overrated tool in your stack?
+"""
+
+[[post]]
+id = "reach-16"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Questions to ask your first users:
+
+→ What were you trying to do?
+→ What almost stopped you?
+→ What would you use if this didn't exist?
+
+Save this for your next user call.
+"""
+
+[[post]]
+id = "reach-17"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Building alone or with a cofounder? If you started over, which would you pick?
+"""
+
+[[post]]
+id = "reach-18"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+AI made building faster. It didn't make marketing faster. That's where solo founders win or lose now.
+"""
+
+[[post]]
+id = "reach-19"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+The best money you ever spent on your product: ____
+"""
+
+[[post]]
+id = "reach-20"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+How many products have you launched? Count the ones nobody saw too.
+"""
+
+[[post]]
+id = "reach-21"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+A boring product that solves one real problem beats a clever product nobody needs.
+"""
+
+[[post]]
+id = "reach-22"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Next.js or plain HTML for a landing page? Be honest.
+"""
+
+[[post]]
+id = "reach-23"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Me: this bug will take 10 minutes.
+Also me, 4 hours later: rewriting the whole auth flow.
+"""
+
+[[post]]
+id = "reach-24"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+The most useful feedback comes from people who stopped using your product. Ask them why.
+"""
+
+[[post]]
+id = "reach-25"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+If you had to start from zero followers today, what's the first thing you'd post?
+"""
+
+[[post]]
+id = "reach-26"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Shipping something small every week beats planning a big launch for months.
+"""
+
+[[post]]
+id = "reach-27"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+What's one tool you'd pay for even if it doubled in price?
+"""
+
+[[post]]
+id = "reach-28"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+SEO in 2026 isn't only Google. People ask ChatGPT and Claude what to buy. Have you checked what they say about your product?
+"""
+
+[[post]]
+id = "reach-29"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+What made you start building things online?
+"""
+
+[[post]]
+id = "reach-30"
+kind = "reach"
+draft = true
+platforms = ["x"]
+text = """
+Ship fast and fix later, or ship once and get it right? Pick one.
+"""
+
+[[post]]
+id = "connect-01"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Looking for people to grow with this week:
+
+→ Indie hackers
+→ SaaS builders
+→ Mobile devs
+→ AI tinkerers
+
+Say hi and tell me what you're building 👋 #connect
+"""
+
+[[post]]
+id = "connect-02"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Developers who also handle sales and support, let's connect. What are you building? #connect #indiehackers
+"""
+
+[[post]]
+id = "connect-03"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Building a tool for other developers? Tell me what it does, and let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-04"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Founders from Southeast Asia, say hi. What are you working on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-05"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're building with no team and no funding. What's your product? #connect #bootstrapped
+"""
+
+[[post]]
+id = "connect-06"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+SaaS builders, drop your one-line pitch and meet the people below you. #connect #SaaS
+"""
+
+[[post]]
+id = "connect-07"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Small accounts grow faster in groups. If you're under 2,000 followers and building something, say hi 👋 #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-08"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Mobile app developers, let's connect. What's your app, and which store is it on? #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-09"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Who's building something with AI this month? Tell me what it does, and let's connect. #connect #AI
+"""
+
+[[post]]
+id = "connect-10"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Founders from the Middle East and Turkey, say hi. What are you building? #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-11"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+If you build after your day job, let's connect. What's your side project? #connect #indiehackers
+"""
+
+[[post]]
+id = "connect-12"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Let's connect if you're into SEO, content or AI search. What are you working on? #connect #SEO
+"""
+
+[[post]]
+id = "connect-13"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Introduce yourself in one line: your name, your product, who it's for. Let's connect. #connect #buildinpublic
+"""
+
+[[post]]
+id = "connect-14"
+kind = "connect"
+draft = true
+platforms = ["x"]
+text = """
+Vibe coders, let's see what you built. Share it below, and let's connect. #connect #vibecoding
 """

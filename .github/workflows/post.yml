@@ -9,10 +9,14 @@ on:
         type: boolean
         default: true
       lane:
-        description: "main = shared posts; extra = X-only posts"
+        description: "Not used: each run posts what SLOTS in poster.py says for its UTC hour"
         type: choice
         options: [main, extra]
         default: main
+      hour:
+        description: "Act as if it's this UTC hour (for testing a slot); empty = now"
+        type: string
+        default: ""
       platforms:
         description: "Comma-separated platforms"
         type: string
@@ -36,9 +40,9 @@ jobs:
           python-version: "3.12"
 
       - name: Post
-        run: python poster.py run --platforms "$PLATFORMS" --lane "$LANE" ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python poster.py run --platforms "$PLATFORMS" --lane auto ${HOUR:+--hour "$HOUR"} ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
-          LANE: ${{ inputs.lane || 'main' }}
+          HOUR: ${{ inputs.hour }}
           PLATFORMS: ${{ inputs.platforms || 'x,bluesky,linkedin' }}
           X_MIN_GAP_MINUTES: "30"
           POSTER_TIMEZONE: Asia/Famagusta

@@ -6,6 +6,8 @@
   python3 poster.py run                       Post the next due item to each platform
   python3 poster.py run --platforms bluesky   Limit a run to some platforms
   python3 poster.py run --lane extra          Only posts marked platforms = ["x"]
+  python3 poster.py run --lane auto           Post what the hourly schedule (SLOTS) says
+  python3 poster.py run --lane auto --hour 8 --dry-run   Preview a slot
   python3 poster.py verify                    Test credentials without posting
 
 Each run posts at most one item per platform. What has been posted is recorded
@@ -175,17 +177,20 @@ def is_due(post, today):
 
 
 def in_lane(post, lane):
-    """The "extra" lane is only X-only posts; the "main" lane is everything else."""
+    """The "extra" lane is only X-only posts; the "main" lane is everything else.
+    Posts with a `kind` belong to the hourly schedule, not to either lane."""
     if lane is None:
         return True
+    if post.get("kind"):
+        return False
     return (post.get("platforms") == ["x"]) == (lane == "extra")
 
 
-def next_post(posts, state, platform, today, lane=None):
+def next_post(posts, state, platform, today, lane=None, kind=None):
     for post in posts:
         if (platform in post.get("platforms", PLATFORMS)
                 and platform not in state.get(post["id"], {})
-                and in_lane(post, lane)
+                and (in_lane(post, lane) if kind is None else post.get("kind") == kind)
                 and is_due(post, today)):
             return post
     return None
@@ -339,6 +344,91 @@ def fetch_image(url):
     headers, body = http("GET", url, timeout=20)
     content_type = (headers.get("Content-Type") or "image/jpeg").split(";")[0].strip()
     return content_type, body
+
+
+# ---------------------------------------------------------------- hourly schedule
+
+# What each run posts, by the UTC hour it starts in (cron-job.org starts one run at
+# each of these hours). A run tries its kinds in order and posts the first one that
+# has something left. A blog name posts that blog's oldest unposted article, so a
+# backlog catches up and then new articles go out as they're published. "connect"
+# and "reach" post the next queue.toml post with that `kind`.
+SLOTS = {
+    8: ["launchorbit", "reach"],
+    9: ["reach"],
+    11: ["connect"],
+    12: ["tryseo", "reach"],
+    15: ["reach"],
+    19: ["launchorbit", "reach"],
+    21: ["connect"],
+    22: ["reach"],
+}
+BLOGS = {"launchorbit": ("LaunchOrbit", "https://launchorbit.co"),
+         "tryseo": ("TrySEO", "https://tryseo.org")}
+ARTICLE_PLATFORMS = ["x", "bluesky", "linkedin"]
+
+
+@functools.lru_cache(maxsize=None)
+def blog_urls(blog):
+    """Article URLs listed in a blog's sitemap, in sitemap order."""
+    site = BLOGS[blog][1]
+    _, body = http("GET", f"{site}/sitemap.xml", timeout=20)
+    urls = re.findall(rf"<loc>\s*({re.escape(site)}/blog/[^<\s]+)\s*</loc>", body.decode("utf-8", "replace"))
+    return list(dict.fromkeys(urls))
+
+
+@functools.lru_cache(maxsize=None)
+def fetch_article(url):
+    """(published date, title, description) of a blog article."""
+    _, body = http("GET", url, headers={"Accept": "text/html"}, timeout=20)
+    page = body[:2_000_000].decode("utf-8", errors="replace")
+    parser = MetaParser()
+    parser.feed(page)
+    title = parser.meta.get("og:title") or parser.title.strip()
+    title = re.sub(r"\s*[|·]\s*(LaunchOrbit|TrySEO)\s*$", "", html.unescape(title))
+    published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', page)
+    return (published.group(1) if published else "9999-12-31", title,
+            html.unescape(parser.meta.get("description") or parser.meta.get("og:description") or ""))
+
+
+def article_id(blog, url):
+    return f"{blog}-blog-{url.rstrip('/').rsplit('/', 1)[-1]}"
+
+
+def article_post(blog, url, posts_by_id):
+    """A post for a blog article: the hand-written one in queue.toml with id
+    "<blog>-blog-<slug>" if there is one, otherwise the article's title and description."""
+    post_id = article_id(blog, url)
+    base = {"id": post_id, "platforms": ARTICLE_PLATFORMS, "link": url, "x_include_link": True}
+    if post_id in posts_by_id:
+        return {**posts_by_id[post_id], **base}
+    _, title, description = fetch_article(url)
+    lead = f"From the {BLOGS[blog][0]} blog: {title}"
+    for text in (f"{lead}\n\n{description}", lead):
+        post = {**base, "text": text}
+        if not any(problems(post, p) for p in ("x", "bluesky")):
+            return post
+    return post
+
+
+def next_article(blog, posts, state):
+    """The oldest article not yet posted to X, or None when the blog is caught up."""
+    posts_by_id = {p["id"]: p for p in posts}
+    waiting = []
+    for order, url in enumerate(blog_urls(blog)):
+        post_id = article_id(blog, url)
+        if "x" in state.get(post_id, {}) or posts_by_id.get(post_id, {}).get("draft"):
+            continue
+        waiting.append((fetch_article(url)[0], order, url))
+    if not waiting:
+        return None
+    return article_post(blog, min(waiting)[2], posts_by_id)
+
+
+def scheduled_post(kind, posts, state, today):
+    if kind in BLOGS:
+        return next_article(kind, posts, state)
+    return next_post(posts, state, "x", today, kind=kind)
 
 
 # ---------------------------------------------------------------- X
@@ -636,19 +726,85 @@ def cmd_check(args):
                 and find_links(x_body) and not post.get("x_include_link")):
             log(f"  note: the X text contains a link, so it costs ${X_COST_WITH_LINK:.2f} instead of ${X_COST_PLAIN:.3f}")
 
-    log("\nNext up:")
-    for platform in PLATFORMS:
-        post = next_post(posts, state, platform, today, "main")
-        ready = "" if configured(platform) else "  (no credentials yet)"
-        log(f"  {platform:<9} {post['id'] if post else 'nothing due'}{ready}")
-    extra = next_post(posts, state, "x", today, "extra")
-    left = sum(1 for p in posts if in_lane(p, "extra") and "x" not in state.get(p["id"], {}) and not p.get("draft"))
-    log(f"  x (extra) {extra['id'] if extra else 'nothing due'}  ({left} X-only posts left)")
+    log("\nSchedule (UTC): " + ", ".join(f"{h:02d}:xx {'/'.join(k)}" for h, k in SLOTS.items()))
+    log("Next up:")
+    for kind in ["launchorbit", "tryseo", "connect", "reach"]:
+        if kind in BLOGS:
+            try:
+                left = sum(1 for url in blog_urls(kind) if "x" not in state.get(article_id(kind, url), {}))
+                post = next_article(kind, posts, state)
+            except Exception as e:
+                log(f"  {kind:<12} could not load the blog: {e}")
+                continue
+            log(f"  {kind:<12} {post['id'] if post else 'caught up'}  ({left} articles not posted yet)")
+            if post and not args.quiet:
+                for platform in ("x", "bluesky"):
+                    show(post, platform)
+        else:
+            post = next_post(posts, state, "x", today, kind=kind)
+            left = sum(1 for p in posts if p.get("kind") == kind and is_due(p, today) and "x" not in state.get(p["id"], {}))
+            log(f"  {kind:<12} {post['id'] if post else 'nothing left'}  ({left} left)")
     check_linkedin_expiry(today)
     return 1 if errors else 0
 
 
+def publish(post, platform, state, dry_run):
+    """Post to one platform and record it. Returns 1 on failure, else 0."""
+    if problems(post, platform):
+        warn(f"{platform}: not posting {post['id']}: {'; '.join(problems(post, platform))}")
+        return 1
+    if dry_run:
+        show(post, platform)
+        return 0
+    try:
+        result = POSTERS[platform](post)
+    except Exception as e:
+        warn(f"{platform}: failed to post {post['id']}: {e}")
+        return 1
+    state.setdefault(post["id"], {})[platform] = {**result, "posted_at": now_utc()}
+    save_state(state)  # save after every success so a later failure can't cause a double post
+    log(f"{platform}: posted {post['id']} -> {result['url']}")
+    return 0
+
+
+def run_slot(args):
+    """--lane auto: post what SLOTS says for this hour, to every platform the post is for."""
+    posts, state, today = load_queue(), load_state(), local_today()
+    hour = args.hour if args.hour is not None else dt.datetime.now(dt.timezone.utc).hour
+    kinds = SLOTS.get(hour, ["reach"])
+    min_gap = int(os.environ.get("X_MIN_GAP_MINUTES", "0"))
+    since = minutes_since_last_post(state, "x")
+    if min_gap and since is not None and since < min_gap and not args.dry_run:
+        log(f"x: last post was {since:.0f} min ago (minimum gap {min_gap}), skipping this run")
+        return 0
+    for kind in kinds:
+        try:
+            post = scheduled_post(kind, posts, state, today)
+        except Exception as e:
+            warn(f"{kind}: could not load articles: {e}")
+            continue
+        if post:
+            break
+    else:
+        log(f"{hour:02d}:00 UTC slot ({', '.join(kinds)}): nothing left to post")
+        return 0
+    log(f"{hour:02d}:00 UTC slot: {kind} -> {post['id']}")
+    failures = 0
+    for platform in post.get("platforms", PLATFORMS):
+        if args.platforms and platform not in args.platforms:
+            continue
+        if platform in state.get(post["id"], {}):
+            continue
+        if not configured(platform) and not args.dry_run:
+            log(f"{platform}: no credentials, skipping")
+            continue
+        failures += publish(post, platform, state, args.dry_run)
+    return 1 if failures else 0
+
+
 def cmd_run(args):
+    if args.lane == "auto":
+        return run_slot(args)
     posts, state, today = load_queue(), load_state(), local_today()
     check_linkedin_expiry(today)
     failures = 0
@@ -668,22 +824,7 @@ def cmd_run(args):
         if not post:
             log(f"{platform}: nothing due")
             continue
-        if problems(post, platform):
-            failures += 1
-            warn(f"{platform}: not posting {post['id']}: {'; '.join(problems(post, platform))}")
-            continue
-        if args.dry_run:
-            show(post, platform)
-            continue
-        try:
-            result = POSTERS[platform](post)
-        except Exception as e:
-            failures += 1
-            warn(f"{platform}: failed to post {post['id']}: {e}")
-            continue
-        state.setdefault(post["id"], {})[platform] = {**result, "posted_at": now_utc()}
-        save_state(state)  # save after every success so a later failure can't cause a double post
-        log(f"{platform}: posted {post['id']} -> {result['url']}")
+        failures += publish(post, platform, state, args.dry_run)
     return 1 if failures else 0
 
 
@@ -706,7 +847,8 @@ def main():
     load_env()
     parser = argparse.ArgumentParser(description="Post queued updates to X, Bluesky and LinkedIn.")
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("check", help="validate queue.toml and show what posts next")
+    check = sub.add_parser("check", help="validate queue.toml and show what posts next")
+    check.add_argument("--quiet", action="store_true", help="don't print the next articles in full")
     for name, help_text in (("run", "post the next due item to each platform"),
                             ("verify", "test credentials without posting")):
         p = sub.add_parser(name, help=help_text)
@@ -714,8 +856,10 @@ def main():
                        help="comma-separated subset, e.g. bluesky,linkedin")
         if name == "run":
             p.add_argument("--dry-run", action="store_true", help="show what would be posted")
-            p.add_argument("--lane", choices=["main", "extra"],
-                           help='main: skip X-only posts; extra: only posts with platforms = ["x"]')
+            p.add_argument("--lane", choices=["auto", "main", "extra"],
+                           help='auto: post what SLOTS says for this hour; main: skip X-only posts; '
+                                'extra: only posts with platforms = ["x"]')
+            p.add_argument("--hour", type=int, help="with --lane auto, act as if it's this UTC hour")
     args = parser.parse_args()
     if getattr(args, "platforms", None) and set(args.platforms) - set(PLATFORMS):
         parser.error(f"--platforms must be from: {', '.join(PLATFORMS)}")

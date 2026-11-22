@@ -5,9 +5,12 @@ Posts from `queue.toml` to X, Bluesky and LinkedIn on a schedule. It runs free o
 ## How it works
 
 - You (or Claude) write posts into `queue.toml`.
-- **Main runs** (08:17, 14:17 and 19:17 UTC) post the shared queue to X and Bluesky, plus LinkedIn at 14:17. Posts marked `platforms = ["x", "bluesky"]` skip LinkedIn, so keep about two of those for every post that goes everywhere.
-- **Extra runs** (12 a day) post only X-only posts, marked `platforms = ["x"]`, at least 30 minutes after the previous X post. That makes up to 15 X posts a day while Bluesky stays at 3, in step with X on the shared posts.
-- cron-job.org starts each run at the exact time by calling GitHub's API (four jobs: main 08:17 and 19:17, main + LinkedIn 14:17, and X extra at :17 and :47). GitHub's own scheduler is off, so the two never both post.
+- cron-job.org starts a run at 08:17, 09:47, 11:17, 12:47, 15:17, 19:17, 21:17 and 22:47 UTC by calling GitHub's API. GitHub's own scheduler is off.
+- Each run posts what `SLOTS` in `poster.py` says for its hour:
+  - **LaunchOrbit articles** at 08 and 19, **TrySEO articles** at 12. Articles come straight from each blog's sitemap, oldest unposted first, so a backlog catches up and new articles go out as they're published. They post to X (with the link) and Bluesky (as a link card). A post in `queue.toml` with id `launchorbit-blog-<slug>` and `kind = "article"` replaces the default title-and-description text.
+  - **#connect posts** (`kind = "connect"`) at 11 and 21.
+  - **Reach posts** (`kind = "reach"`) at 09, 15 and 22, and in the article slots when a blog has nothing new.
+- X posts are at least 30 minutes apart, so a run that fires twice doesn't double post.
 - What has been posted is recorded in `state/posted.json` and committed back to the repo, so nothing posts twice.
 - A platform with no credentials is skipped, so you can start with one and add the others later.
 - If a post fails, the run is marked failed and GitHub emails you. The next run retries it.
@@ -63,10 +66,10 @@ gh secret set -f .env
 
 To test, open **Actions → Post to social → Run workflow** in the repo. Manual runs are dry runs unless you untick the box.
 
-To change the posting time, edit the `cron` line in `.github/workflows/post.yml`.
+To change what posts when, edit `SLOTS` in `poster.py`. To change the times, edit the jobs on cron-job.org.
 
 ## Day to day
 
 - Add posts to `queue.toml` and push. Run `python3 poster.py check` first to catch posts that are too long.
 - `draft = true` holds a post back. `date = 2026-11-03` holds it until that day.
-- To post more than once a day, add more `cron` lines to the workflow. Each run posts one item per platform.
+- `python3 poster.py run --lane auto --hour 8 --dry-run` previews what a slot would post.
