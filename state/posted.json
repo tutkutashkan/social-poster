@@ -2377,5 +2377,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-24T22:47:14Z"
     }
+  },
+  "launchorbit-blog-how-to-launch-a-startup-product": {
+    "x": {
+      "id": "2125504142504611936",
+      "url": "https://x.com/i/web/status/2125504142504611936",
+      "cost_usd": 0.2,
+      "posted_at": "2026-11-25T08:17:32Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n34pvcjlrk22",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n34pvcjlrk22",
+      "posted_at": "2026-11-25T08:17:51Z"
+    }
   }
 }
