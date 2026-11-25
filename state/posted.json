@@ -2422,5 +2422,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-25T15:17:20Z"
     }
+  },
+  "launchorbit-blog-product-launch-checklist": {
+    "x": {
+      "id": "2125670193225781465",
+      "url": "https://x.com/i/web/status/2125670193225781465",
+      "cost_usd": 0.2,
+      "posted_at": "2026-11-25T19:17:21Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n35ur4kf632u",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n35ur4kf632u",
+      "posted_at": "2026-11-25T19:17:39Z"
+    }
   }
 }
