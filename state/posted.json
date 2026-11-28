@@ -2644,5 +2644,18 @@
       "cost_usd": 0.015,
       "posted_at": "2026-11-28T15:17:16Z"
     }
+  },
+  "launchorbit-blog-product-launch-platform-comparison": {
+    "x": {
+      "id": "2126757346168959470",
+      "url": "https://x.com/i/web/status/2126757346168959470",
+      "cost_usd": 0.2,
+      "posted_at": "2026-11-28T19:17:19Z"
+    },
+    "bluesky": {
+      "id": "at://did:plc:dy3jtsyrqrlialgspkmzu57v/app.bsky.feed.post/3n3fg5ss2q62z",
+      "url": "https://bsky.app/profile/did:plc:dy3jtsyrqrlialgspkmzu57v/post/3n3fg5ss2q62z",
+      "posted_at": "2026-11-28T19:17:37Z"
+    }
   }
 }
